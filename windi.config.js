@@ -5,7 +5,14 @@ export default defineConfig({
   darkMode: 'class',
   safelist: 'p-3 p-4 p-5',
   extract: {
-    include: ['src/**/*.{html,svelte}'],
+    include: [
+      'index.html',
+      'src/**/*.{svelte,html,jsx,tsx}',
+    ],
+    exclude: [
+      'node_modules/**/*',
+      '.git/**/*',
+    ],
   },
   content: ['./public/**/*.html', './src/**/*.{js,svelte}'],
   theme: {

@@ -3,7 +3,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { VitePWA } from 'vite-plugin-pwa';
 import WindiCSS from 'vite-plugin-windicss';
 import * as path from 'path';
-import { splitVendorChunkPlugin } from 'vite'
+// import { splitVendorChunkPlugin } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,9 +11,6 @@ export default defineConfig({
     if (id.includes('node_modules')) return id.toString().split('node_modules/')[1].split('/')[0].toString();
   },
   plugins: [
-    splitVendorChunkPlugin(),
-    svelte(),
-    WindiCSS(),
     VitePWA({
       srcDir: 'src',
       filename: 'sw.js',
@@ -46,6 +43,9 @@ export default defineConfig({
       },
       workbox: {},
     }),
+    svelte(),
+    WindiCSS(),
+    // splitVendorChunkPlugin(),
   ],
   resolve: {
     alias: {

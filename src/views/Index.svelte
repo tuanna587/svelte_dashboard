@@ -98,7 +98,7 @@
           >
             <img
               alt="..."
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auuse:link href=format&fit=crop&w=700&q=80"
+              src="/assets/img/creative-project.jfif"
               class="w-full align-middle rounded-t-lg"
             />
             <blockquote class="relative p-8 mb-4">
@@ -365,7 +365,7 @@
                   <img
                     alt="..."
                     class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                    src="/assets/logos/js.png"
+                    src="/assets/logos/nuxtjs.jpg"
                   />
                   <p class="text-lg text-white mt-4 font-semibold">
                     Nuxt Js

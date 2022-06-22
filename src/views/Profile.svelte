@@ -4,6 +4,7 @@
     import Footer from "@/components/Footers/Footer.svelte";
   
     const team2 = "/assets/img/team-2-800x800.jpg";
+    const profile_bg = "/assets/img/profile-bg.jfif";
   </script>
   
   <div>
@@ -13,7 +14,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url(https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80);
+            background-image: url({profile_bg});
           "
         >
           <span
