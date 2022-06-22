@@ -18,9 +18,7 @@
     const landing = "/assets/img/landing.jpg";
 
   </script>
-
-
-  
+ 
   <IndexNavbar />
   <section class="header relative pt-16 items-center flex h-screen max-h-860-px">
     <div class="container mx-auto items-center flex flex-wrap">

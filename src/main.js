@@ -1,4 +1,5 @@
-import 'virtual:windi.css';
+// import 'windi.css';
+import 'virtual:windi.css'
 import('@fortawesome/fontawesome-free/css/all.min.css');
 import('@fortawesome/fontawesome-free/js/fontawesome.min.js');
 import './app.css';
