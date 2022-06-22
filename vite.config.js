@@ -1,99 +1,71 @@
-import { defineConfig } from "vite";
-import { svelte } from "@sveltejs/vite-plugin-svelte";
-import { VitePWA } from "vite-plugin-pwa";
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
+import { VitePWA } from 'vite-plugin-pwa';
+import scss from 'rollup-plugin-scss';
 
+import * as path from 'path';
+const production = !process.env.ROLLUP_WATCH;
 // https://vitejs.dev/config/
 export default defineConfig({
+  manualChunks: (id) => {
+    if (id.includes('node_modules')) return id.toString().split('node_modules/')[1].split('/')[0].toString();
+  },
   plugins: [
+    // splitVendorChunkPlugin(),
     svelte(),
     VitePWA({
-      srcDir: "src",
-      filename: "sw.js",
-      registerType: "autoUpdate",
-      strategies: "injectManifest",
-      includeAssets: [
-        "favicon.svg",
-        "favicon.ico",
-        "robots.txt",
-        "apple-touch-icon.png",
-      ],
+      srcDir: 'src',
+      filename: 'sw.js',
+      registerType: 'autoUpdate',
+      strategies: 'injectManifest',
+      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: "Skote svelte copy",
-        short_name: "Skote svelte copy",
-        description: "Clone skote dashboard",
-        theme_color: "#ffffff",
+        name: 'Skote svelte copy',
+        short_name: 'Skote svelte copy',
+        description: 'Clone skote dashboard',
+        theme_color: '#ffffff',
         icons: [
           {
-            src: "icons/icon-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
+            src: 'assets/icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            src: "icons/icon-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
+            src: 'assets/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
           },
           {
-            src: "icons/icon-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
+            src: 'assets/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
           },
         ],
       },
-      workbox: {
-        runtimeCaching: [
-          {
-            handler: "NetworkOnly",
-            urlPattern: /\/api\/.*\/*.json/,
-            method: "POST",
-            options: {
-              backgroundSync: {
-                name: "network-detection",
-                options: {
-                  maxRetentionTime: 24 * 60,
-                },
-              },
-            },
-          },
-          {
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "google-fonts-cache",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-          {
-            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "gstatic-fonts-cache",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-        ],
-      },
+      workbox: {},
     }),
   ],
 
   css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: '@use "src/variables.scss" as *;',
-      },
+    // preprocessorOptions: {
+    //   scss: {
+    //     additionalData: '@use "src/variables.scss" as *;',
+    //   },
+    // },
+    // output: 'public/build/vendor.css'
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve('./src'),
     },
+  },
+  server: {
+    hmr: {
+      overlay: true,
+    },
+    // watch: {
+    //   usePolling: true
+    // }
   },
 });
