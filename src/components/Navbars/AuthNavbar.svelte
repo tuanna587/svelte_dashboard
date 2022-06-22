@@ -1,7 +1,5 @@
 <script>
   import { link } from 'svelte-spa-router';
-
-  // core components
   import PagesDropdown from '@/components/Dropdowns/PagesDropdown.svelte';
 
   let navbarOpen = false;

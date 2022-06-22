@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { VitePWA } from 'vite-plugin-pwa';
-import scss from 'rollup-plugin-scss';
+import WindiCSS from 'vite-plugin-windicss';
 
 import * as path from 'path';
 const production = !process.env.ROLLUP_WATCH;
@@ -12,6 +12,7 @@ export default defineConfig({
   },
   plugins: [
     // splitVendorChunkPlugin(),
+    WindiCSS(),
     svelte(),
     VitePWA({
       srcDir: 'src',
@@ -46,15 +47,6 @@ export default defineConfig({
       workbox: {},
     }),
   ],
-
-  css: {
-    // preprocessorOptions: {
-    //   scss: {
-    //     additionalData: '@use "src/variables.scss" as *;',
-    //   },
-    // },
-    // output: 'public/build/vendor.css'
-  },
   resolve: {
     alias: {
       '@': path.resolve('./src'),
@@ -64,8 +56,5 @@ export default defineConfig({
     hmr: {
       overlay: true,
     },
-    // watch: {
-    //   usePolling: true
-    // }
   },
 });

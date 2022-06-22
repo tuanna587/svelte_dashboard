@@ -1,5 +1,5 @@
 <script>
-  // core components
+  
   import TableDropdown from "@/components/Dropdowns/TableDropdown.svelte";
 
   const bootstrap = "/assets/img/bootstrap.jpg";
@@ -15,7 +15,6 @@
 
   // can be one of light or dark
   export let color = "light";
-  export let location;
 </script>
 
 <div

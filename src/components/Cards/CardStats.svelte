@@ -1,5 +1,5 @@
 <script>
-  // core components
+  
 
   export let statSubtitle = "Traffic";
   export let statTitle = "350,897";

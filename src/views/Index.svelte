@@ -2,7 +2,6 @@
     import { link } from "svelte-spa-router";
     import active from 'svelte-spa-router/active';
   
-    // core components
     import IndexNavbar from "@/components/Navbars/IndexNavbar.svelte";
     import Footer from "@/components/Footers/Footer.svelte";
 
@@ -33,7 +32,7 @@
           <p class="mt-4 text-lg leading-relaxed text-slate-500">
             Notus Svelte is Free and Open Source. It does not change any of the CSS from
             <a
-              href="https://tailwindcss.com/?ref=creativetim"
+              href="https://tailwindcss.com/?ref=intlighttech"
               class="text-slate-600"
               target="_blank"
             >
@@ -44,14 +43,14 @@
           </p>
           <div class="mt-12">
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index"
+              href="http://svelte01.intlighttech.com/docs/"
               target="_blank"
               class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >
               Get started
             </a>
             <a
-              href="https://github.com/creativetimofficial/notus-svelte?ref=ns-index"
+              href="https://github.com/tuanna587/svelte_dashboard"
               class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
               target="_blank"
             >

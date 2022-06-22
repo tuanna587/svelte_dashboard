@@ -1,34 +1,24 @@
 <script>
-  // core components
-  const github = "/assets/img/github.svg";
-  const google = "/assets/img/google.svg";
+  import { link } from 'svelte-spa-router';
+  const github = '/assets/img/github.svg';
+  const google = '/assets/img/google.svg';
 </script>
 
 <div class="container mx-auto px-4 h-full">
   <div class="flex content-center items-center justify-center h-full">
     <div class="w-full lg:w-6/12 px-4">
-      <div
-        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-slate-200 border-0"
-      >
+      <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-slate-200 border-0">
         <div class="rounded-t mb-0 px-6 py-6">
           <div class="text-center mb-3">
-            <h6 class="text-slate-500 text-sm font-bold">
-              Sign up with
-            </h6>
+            <h6 class="text-slate-500 text-sm font-bold">Sign up with</h6>
           </div>
           <div class="btn-wrapper text-center">
-            <button
-              class="bg-white active:bg-slate-50 text-slate-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-              type="button"
-            >
-              <img alt="..." class="w-5 mr-1" src="{github}" />
+            <button class="bg-white active:bg-slate-50 text-slate-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button">
+              <img alt="..." class="w-5 mr-1" src={github} />
               Github
             </button>
-            <button
-              class="bg-white active:bg-slate-50 text-slate-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-              type="button"
-            >
-              <img alt="..." class="w-5 mr-1" src="{google}" />
+            <button class="bg-white active:bg-slate-50 text-slate-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button">
+              <img alt="..." class="w-5 mr-1" src={google} />
               Google
             </button>
           </div>
@@ -40,75 +30,46 @@
           </div>
           <form>
             <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-slate-600 text-xs font-bold mb-2"
-                for="grid-name"
-              >
-                Name
-              </label>
-              <input
-                id="grid-name"
-                type="email"
-                class="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                placeholder="Name"
-              />
+              <label class="block uppercase text-slate-600 text-xs font-bold mb-2" for="grid-name"> Name </label>
+              <input id="grid-name" type="email" class="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Name" />
             </div>
 
             <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-slate-600 text-xs font-bold mb-2"
-                for="grid-email"
-              >
-                Email
-              </label>
-              <input
-                id="grid-email"
-                type="email"
-                class="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                placeholder="Email"
-              />
+              <label class="block uppercase text-slate-600 text-xs font-bold mb-2" for="grid-email"> Email </label>
+              <input id="grid-email" type="email" class="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Email" />
             </div>
 
             <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-slate-600 text-xs font-bold mb-2"
-                for="grid-password"
-              >
-                Password
-              </label>
-              <input
-                id="grid-password"
-                type="password"
-                class="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                placeholder="Password"
-              />
+              <label class="block uppercase text-slate-600 text-xs font-bold mb-2" for="grid-password"> Password </label>
+              <input id="grid-password" type="password" class="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" placeholder="Password" />
             </div>
 
             <div>
               <label class="inline-flex items-center cursor-pointer">
-                <input
-                  id="customCheckLogin"
-                  type="checkbox"
-                  class="form-checkbox border-0 rounded text-slate-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
-                />
+                <input id="customCheckLogin" type="checkbox" class="form-checkbox border-0 rounded text-slate-700 ml-1 w-5 h-5 ease-linear transition-all duration-150" />
                 <span class="ml-2 text-sm font-semibold text-slate-600">
                   I agree with the
-                  <a href="#pablo" on:click={(e) => e.preventDefault()} class="text-red-500">
-                    Privacy Policy
-                  </a>
+                  <a href="#pablo" on:click={(e) => e.preventDefault()} class="text-red-500"> Privacy Policy </a>
                 </span>
               </label>
             </div>
 
             <div class="text-center mt-6">
-              <button
-                class="bg-slate-800 text-white active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                type="button"
-              >
-                Create Account
-              </button>
+              <button class="bg-slate-800 text-white active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150" type="button"> Create Account </button>
             </div>
           </form>
+        </div>
+      </div>
+      <div class="flex flex-wrap mt-6 relative">
+        <div class="w-1/2">
+          <a href="/auth/login" use:link class="text-slate-200">
+            <small>Login</small>
+          </a>
+        </div>
+        <div class="w-1/2 text-right">
+          <a use:link href="/auth/register" class="text-slate-200">
+            <small>Create new account</small>
+          </a>
         </div>
       </div>
     </div>

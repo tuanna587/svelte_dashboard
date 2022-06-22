@@ -1,5 +1,5 @@
 <script>
-  // core components
+  
   import MapExample from "@/components/Maps/MapExample.svelte";
   
 </script>

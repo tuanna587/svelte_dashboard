@@ -1,7 +1,7 @@
 <script>
     // import { link } from "svelte-spa-router";
     import Router, {location, link, querystring} from 'svelte-spa-router';
-    // core components
+    
     import NotificationDropdown from "@/components/Dropdowns/NotificationDropdown.svelte";
     import UserDropdown from "@/components/Dropdowns/UserDropdown.svelte";
   

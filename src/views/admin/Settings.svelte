@@ -1,5 +1,5 @@
 <script>
-  // core components
+  
   import CardSettings from "@/components/Cards/CardSettings.svelte";
   import CardProfile from "@/components/Cards/CardProfile.svelte";
 </script>

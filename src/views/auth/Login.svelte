@@ -1,7 +1,6 @@
 <script>
   import { link } from "svelte-spa-router";
 
-  // core components
   const github = "../assets/img/github.svg";
   const google = "../assets/img/google.svg";
 </script>

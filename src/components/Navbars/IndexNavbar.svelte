@@ -1,7 +1,6 @@
 <script>
     import { link } from "svelte-spa-router";
   
-    // core components
     import IndexDropdown from "@/components/Dropdowns/IndexDropdown.svelte";
   
     let navbarOpen = false;
@@ -63,7 +62,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-slate-500 text-slate-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-svelte%2F%23%2F"
+              href="https://www.facebook.com/sharer/sharer.php?u=http://svelte01.intlighttech.com"
               target="_blank"
             >
               <i class="text-slate-400 fab fa-facebook text-lg leading-lg" />
@@ -74,7 +73,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-slate-500 text-slate-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-svelte%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20Svelte%20UI%20Kit%20and%20Admin.%20Let%20Notus%20Svelte%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level."
+              href="https://twitter.com/intent/tweet?url=http://svelte01.intlighttech.com"
               target="_blank"
             >
               <i class="text-slate-400 fab fa-twitter text-lg leading-lg" />
@@ -85,7 +84,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-slate-500 text-slate-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/creativetimofficial/notus-svelte?ref=ns-index-navbar"
+              href="https://github.com/tuanna587/svelte_dashboard"
               target="_blank"
             >
               <i class="text-slate-400 fab fa-github text-lg leading-lg" />
@@ -94,12 +93,13 @@
           </li>
   
           <li class="flex items-center">
-            <button
+            <a
+              href="https://github.com/tuanna587/svelte_dashboard"
               class="bg-red-400 text-white active:bg-red-500 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
               type="button"
             >
               <i class="fas fa-arrow-alt-circle-down"></i> Download
-            </button>
+            </a>
           </li>
         </ul>
       </div>
