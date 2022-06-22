@@ -66,7 +66,7 @@
     />
   </section>
   
-  <section class="mt-48 md:mt-40 pb-40 relative bg-slate-100">
+  <section class="mt-48 md:mt-40 pb-40 relative bg-slate-100 dark:bg-slate-700">
     <div
       class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
       style="transform: translateZ(0);"
@@ -81,7 +81,7 @@
         y="0"
       >
         <polygon
-          class="text-slate-100 fill-current"
+          class="text-slate-100 dark:text-slate-700 fill-current"
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
@@ -136,7 +136,7 @@
                   <h6 class="text-xl mb-1 font-semibold">
                     CSS Components
                   </h6>
-                  <p class="mb-4 text-slate-500">
+                  <p class="mb-4 text-slate-500 dark:text-slate-400">
                     Notus Svelte comes with a huge number of Fully Coded CSS
                     components.
                   </p>
@@ -145,14 +145,14 @@
               <div class="relative flex flex-col min-w-0">
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
+                    class="text-slate-500 dark:text-slate-400 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                   >
                     <i class="fas fa-drafting-compass"></i>
                   </div>
                   <h6 class="text-xl mb-1 font-semibold">
                     JavaScript Components
                   </h6>
-                  <p class="mb-4 text-slate-500">
+                  <p class="mb-4 text-slate-500 dark:text-slate-400">
                     We also feature many dynamic components for React, NextJS, Vue
                     and Angular.
                   </p>
@@ -163,12 +163,12 @@
               <div class="relative flex flex-col min-w-0 mt-4">
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
+                    class="text-slate-500 dark:text-slate-400 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                   >
                     <i class="fas fa-newspaper"></i>
                   </div>
                   <h6 class="text-xl mb-1 font-semibold">Pages</h6>
-                  <p class="mb-4 text-slate-500">
+                  <p class="mb-4 text-slate-500 dark:text-slate-400">
                     This extension also comes with 3 sample pages. They are fully
                     coded so you can start working instantly.
                   </p>
@@ -177,14 +177,14 @@
               <div class="relative flex flex-col min-w-0">
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-slate-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
+                    class="text-slate-500 dark:text-slate-400 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                   >
                     <i class="fas fa-file-alt"></i>
                   </div>
                   <h6 class="text-xl mb-1 font-semibold">
                     Documentation
                   </h6>
-                  <p class="mb-4 text-slate-500">
+                  <p class="mb-4 text-slate-500 dark:text-slate-400">
                     Built by developers for developers. You will love how easy is
                     to to work with Notus Svelte.
                   </p>
@@ -207,7 +207,7 @@
           <h3 class="text-3xl mb-2 font-semibold leading-normal">
             CSS Components
           </h3>
-          <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-600">
+          <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-400">
             Every element that you need in a product comes built in as a
             component. All components fit perfectly with each other and can have
             different colours.
@@ -415,12 +415,12 @@
           <h3 class="text-3xl mb-2 font-semibold leading-normal">
             Javascript Components
           </h3>
-          <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-600">
+          <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-600 dark:text-slate-400">
             In order to create a great User Experience some components require
             JavaScript. In this way you can manipulate the elements on the page
             and give more options to your users.
           </p>
-          <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-600">
+          <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-600 dark:text-slate-400">
             We created a set of Components that are dynamic and come to help you.
           </p>
           <div class="block pb-6">
@@ -489,7 +489,7 @@
             <h3 class="text-3xl font-semibold">
               Complex Documentation
             </h3>
-            <p class="mt-4 text-lg leading-relaxed text-slate-500">
+            <p class="mt-4 text-lg leading-relaxed text-slate-500 dark:text-slate-400">
               This extension comes a lot of fully coded examples that help you get
               started faster. You can adjust the colors and also the programming
               language. You can change the text and images and you're good to go.
@@ -499,13 +499,13 @@
                 <div class="flex items-center">
                   <div>
                     <span
-                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-slate-500 bg-slate-50 mr-3"
+                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-slate-500 dark:text-slate-400 bg-slate-50 mr-3"
                     >
                       <i class="fas fa-fingerprint"></i>
                     </span>
                   </div>
                   <div>
-                    <h4 class="text-slate-500">
+                    <h4 class="text-slate-500 dark:text-slate-400">
                       Built by Developers for Developers
                     </h4>
                   </div>
@@ -515,13 +515,13 @@
                 <div class="flex items-center">
                   <div>
                     <span
-                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-slate-500 bg-slate-50 mr-3"
+                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-slate-500 dark:text-slate-400 bg-slate-50 mr-3"
                     >
                       <i class="fab fa-html5"></i>
                     </span>
                   </div>
                   <div>
-                    <h4 class="text-slate-500">
+                    <h4 class="text-slate-500 dark:text-slate-400">
                       Carefully crafted code for Components
                     </h4>
                   </div>
@@ -531,13 +531,13 @@
                 <div class="flex items-center">
                   <div>
                     <span
-                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-slate-500 bg-slate-50 mr-3"
+                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-slate-500 dark:text-slate-400 bg-slate-50 mr-3"
                     >
                       <i class="far fa-paper-plane"></i>
                     </span>
                   </div>
                   <div>
-                    <h4 class="text-slate-500">
+                    <h4 class="text-slate-500 dark:text-slate-400">
                       Dynamic Javascript Components
                     </h4>
                   </div>
@@ -564,7 +564,7 @@
     <div class="justify-center text-center flex flex-wrap mt-24">
       <div class="w-full md:w-6/12 px-12 md:px-4">
         <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
-        <p class="text-lg leading-relaxed mt-4 mb-4 text-slate-500">
+        <p class="text-lg leading-relaxed mt-4 mb-4 text-slate-500 dark:text-slate-400">
           Notus Svelte is a completly new product built using our past
           experience in web templates. Take the examples we made for you and start
           playing with them.
@@ -680,7 +680,7 @@
     </div>
   </section>
   
-  <section class="pb-16 bg-slate-200 relative pt-32">
+  <section class="pb-16 bg-slate-200 dark:bg-slate-900 relative pt-32">
     <div
       class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
       style="transform: translateZ(0);"
@@ -695,7 +695,7 @@
         y="0"
       >
         <polygon
-          class="text-slate-200 fill-current"
+          class="text-slate-200 dark:text-slate-900 fill-current"
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
@@ -703,7 +703,7 @@
   
     <div class="container mx-auto">
       <div
-        class="flex flex-wrap justify-center bg-white shadow-xl rounded-lg -mt-64 py-16 px-12 relative z-10"
+        class="flex flex-wrap justify-center bg-white dark:bg-slate-300 shadow-xl rounded-lg -mt-64 py-16 px-12 relative z-10"
       >
         <div class="w-full text-center lg:w-8/12">
           <p class="text-4xl text-center">

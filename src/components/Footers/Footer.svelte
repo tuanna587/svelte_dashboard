@@ -3,7 +3,7 @@
     let date = new Date().getFullYear();
   </script>
   
-  <footer class="relative bg-slate-200 pt-8 pb-6">
+  <footer class="relative bg-slate-200 dark:bg-slate-900 pt-8 pb-6">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
       style="transform: translateZ(0);"
@@ -18,7 +18,7 @@
         y="0"
       >
         <polygon
-          class="text-slate-200 fill-current"
+          class="text-slate-200 dark:text-slate-900 fill-current"
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
