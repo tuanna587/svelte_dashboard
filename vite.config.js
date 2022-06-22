@@ -17,9 +17,9 @@ export default defineConfig({
       strategies: 'injectManifest',
       includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Skote svelte copy',
-        short_name: 'Skote svelte copy',
-        description: 'Clone skote dashboard',
+        name: 'Svelte + Vite + WindiCSS App',
+        short_name: 'Svelte + Vite + WindiCSS App',
+        description: 'An PWA app base svelte,vite,windicss',
         theme_color: '#ffffff',
         icons: [
           {
