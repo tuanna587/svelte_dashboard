@@ -2,18 +2,18 @@ import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { VitePWA } from 'vite-plugin-pwa';
 import WindiCSS from 'vite-plugin-windicss';
-
 import * as path from 'path';
-const production = !process.env.ROLLUP_WATCH;
+import { splitVendorChunkPlugin } from 'vite'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   manualChunks: (id) => {
     if (id.includes('node_modules')) return id.toString().split('node_modules/')[1].split('/')[0].toString();
   },
   plugins: [
-    // splitVendorChunkPlugin(),
-    WindiCSS(),
+    splitVendorChunkPlugin(),
     svelte(),
+    WindiCSS(),
     VitePWA({
       srcDir: 'src',
       filename: 'sw.js',

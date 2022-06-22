@@ -257,7 +257,7 @@
             </span>
           </div>
           <a
-            href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=ns-index"
+            href="http://demo.intlighttech.com/"
             target="_blank"
             class="font-bold text-slate-700 hover:text-slate-500 ease-linear transition-all duration-150"
           >
@@ -307,7 +307,7 @@
           <div class="justify-center flex flex-wrap relative">
             <div class="my-4 w-full lg:w-6/12 px-4">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=ns-index"
+                href="http://svelte01.intlighttech.com/"
                 target="_blank"
               >
                 <div
@@ -316,7 +316,7 @@
                   <img
                     alt="..."
                     class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/svelte.jpg"
+                    src="/assets/logos/svelte.jpg"
                   />
                   <p class="text-lg text-white mt-4 font-semibold">
                     Svelte
@@ -324,14 +324,14 @@
                 </div>
               </a>
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=ns-index"
+                href="http://react01.intlighttech.com/"
                 target="_blank"
               >
                 <div class="bg-sky-500 shadow-lg rounded-lg text-center p-8 mt-8">
                   <img
                     alt="..."
                     class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react.jpg"
+                    src="/assets/logos/react.jpg"
                   />
                   <p class="text-lg text-white mt-4 font-semibold">
                     ReactJS
@@ -339,7 +339,7 @@
                 </div>
               </a>
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=ns-index"
+                href="http://next01.intlighttech.com/"
                 target="_blank"
               >
                 <div
@@ -348,7 +348,7 @@
                   <img
                     alt="..."
                     class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg"
+                    src="/assets/logos/nextjs.jpg"
                   />
                   <p class="text-lg text-white mt-4 font-semibold">
                     NextJS
@@ -358,29 +358,29 @@
             </div>
             <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=ns-index"
+                href="http://nuxt01.intlighttech.com/"
                 target="_blank"
               >
                 <div class="bg-yellow-500 shadow-lg rounded-lg text-center p-8">
                   <img
                     alt="..."
                     class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
+                    src="/assets/logos/js.png"
                   />
                   <p class="text-lg text-white mt-4 font-semibold">
-                    JavaScript
+                    Nuxt Js
                   </p>
                 </div>
               </a>
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/angular/alerts/notus?ref=ns-index"
+                href="http://angular01.intlighttech.com/"
                 target="_blank"
               >
                 <div class="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8">
                   <img
                     alt="..."
                     class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular.jpg"
+                    src="/assets/logos/angular.jpg"
                   />
                   <p class="text-lg text-white mt-4 font-semibold">
                     Angular
@@ -388,7 +388,7 @@
                 </div>
               </a>
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=ns-index"
+                href="http://vue01.intlighttech.com/"
                 target="_blank"
               >
                 <div
@@ -397,7 +397,7 @@
                   <img
                     alt="..."
                     class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue.jpg"
+                    src="/assets/logos/vue.jpg"
                   />
                   <p class="text-lg text-white mt-4 font-semibold">
                     Vue.js
@@ -468,7 +468,7 @@
             </span>
           </div>
           <a
-            href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=ns-index"
+            href="http://alldemo.intlighttech.com/"
             target="_blank"
             class="font-bold text-slate-700 hover:text-slate-500 ease-linear transition-all duration-150"
           >
@@ -651,7 +651,7 @@
           <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-slate-400">
             Since
             <a
-              href="https://tailwindcss.com/?ref=creativetim"
+              href="https://tailwindcss.com/"
               class="text-slate-300"
               target="_blank"
             >
@@ -665,7 +665,7 @@
             Get it free on Github and please help us spread the news with a Star!
           </p>
           <a
-            href="https://github.com/creativetimofficial/notus-svelte?ref=ns-index"
+            href="https://github.com/tuanna587/svelte_dashboard"
             target="_blank"
             class="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
           >
@@ -723,14 +723,14 @@
           </p>
           <div class="sm:block flex flex-col mt-10">
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index"
+              href="svelte01.intlighttech.com/docs/"
               target="_blank"
               class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >
               Get started
             </a>
             <a
-              href="https://github.com/creativetimofficial/notus-svelte?ref=ns-index"
+              href="https://github.com/tuanna587/svelte_dashboard"
               target="_blank"
               class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >

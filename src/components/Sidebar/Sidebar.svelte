@@ -228,7 +228,7 @@
         <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
           <li class="inline-flex">
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/colors/notus"
+              href="http://svelte01.intlighttech.com/docs/colors/notus"
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
@@ -239,7 +239,7 @@
   
           <li class="inline-flex">
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus"
+              href="http://svelte01.intlighttech.com/docs/alerts/notus"
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
@@ -250,67 +250,34 @@
   
           <li class="inline-flex">
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus"
+              href="https://svelte.dev/docs"
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
-              <i class="fab fa-angular mr-2 text-slate-300 text-base"></i>
-              Angular
-            </a>
-          </li>
-  
-          <li class="inline-flex">
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/js/overview/notus"
-              target="_blank"
-              class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
-            >
-              <i class="fab fa-js-square mr-2 text-slate-300 text-base"></i>
-              Javascript
-            </a>
-          </li>
-  
-          <li class="inline-flex">
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus"
-              target="_blank"
-              class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
-            >
-              <i class="fab fa-react mr-2 text-slate-300 text-base"></i>
-              NextJS
-            </a>
-          </li>
-  
-          <li class="inline-flex">
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus"
-              target="_blank"
-              class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
-            >
-              <i class="fab fa-react mr-2 text-slate-300 text-base"></i>
-              React
-            </a>
-          </li>
-  
-          <li class="inline-flex">
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus"
-              target="_blank"
-              class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
-            >
-              <i class="fas fa-link mr-2 text-slate-300 text-base"></i>
+              <i class="fab fa-link mr-2 text-slate-300 text-base"></i>
               Svelte
             </a>
           </li>
   
           <li class="inline-flex">
             <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus"
+              href="https://vite-plugin-pwa.netlify.app/"
+              target="_blank"
+              class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
+            >
+              <i class="fas fa-link mr-2 text-slate-300 text-base"></i>
+              Vite PWA
+            </a>
+          </li>
+  
+          <li class="inline-flex">
+            <a
+              href="https://windicss.org/integrations/vite.html"
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
               <i class="fab fa-vuejs mr-2 text-slate-300 text-base"></i>
-              VueJS
+              WindiCSS + Vite
             </a>
           </li>
   

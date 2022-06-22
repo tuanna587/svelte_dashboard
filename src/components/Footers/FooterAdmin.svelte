@@ -13,10 +13,10 @@
         >
           Copyright © {date}
           <a
-            href="https://www.creative-tim.com?ref=ns-footer-admin"
+            href="http://svelte01.intlighttech.com?ref=ns-footer-admin"
             class="text-slate-500 hover:text-slate-700 text-sm font-semibold py-1"
           >
-            Creative Tim
+            Intlight Tech
           </a>
         </div>
       </div>
@@ -24,15 +24,15 @@
         <ul class="flex flex-wrap list-none md:justify-end justify-center">
           <li>
             <a
-              href="https://www.creative-tim.com?ref=ns-footer-admin"
+              href="http://svelte01.intlighttech.com?ref=ns-footer-admin"
               class="text-slate-600 hover:text-slate-800 text-sm font-semibold block py-1 px-3"
             >
-              Creative Tim
+              Intlight Tech
             </a>
           </li>
           <li>
             <a
-              href="https://www.creative-tim.com/presentation?ref=ns-footer-admin"
+              href="http://svelte01.intlighttech.com/presentation?ref=ns-footer-admin"
               class="text-slate-600 hover:text-slate-800 text-sm font-semibold block py-1 px-3"
             >
               About Us

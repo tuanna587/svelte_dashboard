@@ -17,10 +17,10 @@
         >
           Copyright © {date}
           <a
-            href="https://www.creative-tim.com?ref=ns-footer-small"
+            href="http://svelte01.intlighttech.com?ref=ns-footer-small"
             class="text-white hover:text-slate-300 text-sm font-semibold py-1"
           >
-            Creative Tim
+            Intlight Tech
           </a>
         </div>
       </div>
@@ -28,15 +28,15 @@
         <ul class="flex flex-wrap list-none md:justify-end justify-center">
           <li>
             <a
-              href="https://www.creative-tim.com?ref=ns-footer-small"
+              href="http://svelte01.intlighttech.com?ref=ns-footer-small"
               class="text-white hover:text-slate-300 text-sm font-semibold block py-1 px-3"
             >
-              Creative Tim
+              Intlight Tech
             </a>
           </li>
           <li>
             <a
-              href="https://www.creative-tim.com/presentation?ref=ns-footer-small"
+              href="http://svelte01.intlighttech.com/presentation?ref=ns-footer-small"
               class="text-white hover:text-slate-300 text-sm font-semibold block py-1 px-3"
             >
               About Us

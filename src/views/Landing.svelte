@@ -7,6 +7,7 @@
     const team2 = "/assets/img/team-2-800x800.jpg";
     const team3 = "/assets/img/team-3-800x800.jpg";
     const team4 = "/assets/img/team-4-470x470.png";
+    const banner_bg = "/assets/img/banner_bg.jfif";
   </script>
   
   <div>
@@ -18,7 +19,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);
+            background-image: url({banner_bg});
           "
         >
           <span
@@ -158,7 +159,7 @@
               >
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                  src="/assets/img/team-three.jfif"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -215,7 +216,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                src="/assets/img/company.jfif"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">

@@ -48,7 +48,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-slate-500 text-slate-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index-navbar"
+              href="http://svelte01.intlighttech.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index-navbar"
             >
               <i class="text-slate-400 far fa-file-alt text-lg leading-lg mr-2" />
               Docs

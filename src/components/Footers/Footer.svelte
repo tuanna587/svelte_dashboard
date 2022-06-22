@@ -69,7 +69,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/presentation?ref=ns-footer"
+                    href="http://svelte01.intlighttech.com/presentation?ref=ns-footer"
                   >
                     About Us
                   </a>
@@ -93,7 +93,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=ns-footer"
+                    href="http://svelte01.intlighttech.com/bootstrap-themes/free?ref=ns-footer"
                   >
                     Free Products
                   </a>
@@ -150,10 +150,10 @@
           <div class="text-sm text-slate-500 font-semibold py-1">
             Copyright © {date} Notus Svelte by
             <a
-              href="https://www.creative-tim.com?ref=ns-footer"
+              href="http://svelte01.intlighttech.com?ref=ns-footer"
               class="text-slate-500 hover:text-slate-800"
             >
-              Creative Tim
+              Intlight Tech
             </a>
             .
           </div>
