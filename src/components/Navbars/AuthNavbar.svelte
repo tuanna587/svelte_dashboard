@@ -20,7 +20,7 @@
     <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none rounded shadow-lg {navbarOpen ? 'block' : 'hidden'}" id="example-navbar-warning">
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
         <li class="flex items-center">
-          <a class="lg:text-white lg:hover:text-slate-200 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://svelte01.intlighttech.com/docs/">
+          <a class="lg:text-white lg:hover:text-slate-200 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://svelte01.IntLighttech.com/docs/">
             <i class="lg:text-slate-200 text-slate-400 far fa-file-alt text-lg leading-lg mr-2" />
             Docs
           </a>
@@ -31,7 +31,7 @@
           <PagesDropdown />
         </li>
         <li class="flex items-center">
-          <a class="lg:text-white lg:hover:text-slate-200 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://svelte01.intlighttech.com/docs/" target="_blank">
+          <a class="lg:text-white lg:hover:text-slate-200 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://svelte01.IntLighttech.com/docs/" target="_blank">
             <i class="lg:text-slate-200 text-slate-400 fab fa-facebook text-lg leading-lg" />
             <span class="lg:hidden inline-block ml-2">Share</span>
           </a>
@@ -40,7 +40,7 @@
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-slate-200 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="https://twitter.com/intent/tweet?url=https://svelte01.intlighttech.com/"
+            href="https://twitter.com/intent/tweet?url=https://svelte01.IntLighttech.com/"
             target="_blank"
           >
             <i class="lg:text-slate-200 text-slate-400 fab fa-twitter text-lg leading-lg" />

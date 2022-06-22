@@ -69,7 +69,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="http://svelte01.intlighttech.com/presentation?ref=ns-footer"
+                    href="https://IntLighttech.com/aboutus?ref=ns-footer"
                   >
                     About Us
                   </a>
@@ -77,7 +77,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://blog.creative-tim.com?ref=ns-footer"
+                    href="https://IntLighttech.com/blog/?ref=ns-footer"
                   >
                     Blog
                   </a>
@@ -85,7 +85,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://www.github.com/creativetimofficial?ref=ns-footer"
+                    href="https://github.com/tuanna587/svelte_dashboard?ref=ns-footer"
                   >
                     Github
                   </a>
@@ -93,7 +93,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="http://svelte01.intlighttech.com/bootstrap-themes/free?ref=ns-footer"
+                    href="https://github.com/tuanna587/svelte_dashboard?ref=ns-footer"
                   >
                     Free Products
                   </a>
@@ -110,7 +110,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/notus-svelte/blob/main/LICENSE.md?ref=ns-footer"
+                    href="https://github.com/tuanna587/svelte_dashboard/blob/main/LICENSE.md?ref=ns-footer"
                   >
                     MIT License
                   </a>
@@ -118,7 +118,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/terms?ref=ns-footer"
+                    href="https://IntLighttech.com/terms?ref=ns-footer"
                   >
                     Terms & Conditions
                   </a>
@@ -126,7 +126,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/privacy?ref=ns-footer"
+                    href="https://IntLighttech.com/privacy?ref=ns-footer"
                   >
                     Privacy Policy
                   </a>
@@ -134,7 +134,7 @@
                 <li>
                   <a
                     class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
-                    href="https://creative-tim.com/contact-us?ref=ns-footer"
+                    href="https://IntLighttech.com/contact-us?ref=ns-footer"
                   >
                     Contact Us
                   </a>
@@ -150,10 +150,10 @@
           <div class="text-sm text-slate-500 font-semibold py-1">
             Copyright © {date} Notus Svelte by
             <a
-              href="http://svelte01.intlighttech.com?ref=ns-footer"
+              href="http://svelte01.IntLighttech.com?ref=ns-footer"
               class="text-slate-500 hover:text-slate-800"
             >
-              Intlight Tech
+              IntLight Tech
             </a>
             .
           </div>

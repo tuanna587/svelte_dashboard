@@ -30,7 +30,7 @@
           <p class="mt-4 text-lg leading-relaxed text-slate-500">
             Notus Svelte is Free and Open Source. It does not change any of the CSS from
             <a
-              href="https://tailwindcss.com/?ref=intlighttech"
+              href="https://tailwindcss.com/?ref=IntLighttech"
               class="text-slate-600"
               target="_blank"
             >
@@ -41,7 +41,7 @@
           </p>
           <div class="mt-12">
             <a
-              href="http://svelte01.intlighttech.com/docs/"
+              href="http://svelte01.IntLighttech.com/docs/"
               target="_blank"
               class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >
@@ -255,7 +255,7 @@
             </span>
           </div>
           <a
-            href="http://demo.intlighttech.com/"
+            href="http://demo.IntLighttech.com/"
             target="_blank"
             class="font-bold text-slate-700 hover:text-slate-500 ease-linear transition-all duration-150"
           >
@@ -305,7 +305,7 @@
           <div class="justify-center flex flex-wrap relative">
             <div class="my-4 w-full lg:w-6/12 px-4">
               <a
-                href="http://svelte01.intlighttech.com/"
+                href="http://svelte01.IntLighttech.com/"
                 target="_blank"
               >
                 <div
@@ -322,7 +322,7 @@
                 </div>
               </a>
               <a
-                href="http://react01.intlighttech.com/"
+                href="http://react01.IntLighttech.com/"
                 target="_blank"
               >
                 <div class="bg-sky-500 shadow-lg rounded-lg text-center p-8 mt-8">
@@ -337,7 +337,7 @@
                 </div>
               </a>
               <a
-                href="http://next01.intlighttech.com/"
+                href="http://next01.IntLighttech.com/"
                 target="_blank"
               >
                 <div
@@ -356,7 +356,7 @@
             </div>
             <div class="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
               <a
-                href="http://nuxt01.intlighttech.com/"
+                href="http://nuxt01.IntLighttech.com/"
                 target="_blank"
               >
                 <div class="bg-yellow-500 shadow-lg rounded-lg text-center p-8">
@@ -371,7 +371,7 @@
                 </div>
               </a>
               <a
-                href="http://angular01.intlighttech.com/"
+                href="http://angular01.IntLighttech.com/"
                 target="_blank"
               >
                 <div class="bg-red-700 shadow-lg rounded-lg text-center p-8 mt-8">
@@ -386,7 +386,7 @@
                 </div>
               </a>
               <a
-                href="http://vue01.intlighttech.com/"
+                href="http://vue01.IntLighttech.com/"
                 target="_blank"
               >
                 <div
@@ -466,7 +466,7 @@
             </span>
           </div>
           <a
-            href="http://alldemo.intlighttech.com/"
+            href="http://alldemo.IntLighttech.com/"
             target="_blank"
             class="font-bold text-slate-700 hover:text-slate-500 ease-linear transition-all duration-150"
           >
@@ -721,7 +721,7 @@
           </p>
           <div class="sm:block flex flex-col mt-10">
             <a
-              href="svelte01.intlighttech.com/docs/"
+              href="svelte01.IntLighttech.com/docs/"
               target="_blank"
               class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
             >

@@ -39,7 +39,7 @@
     <div class="lg:flex flex-grow items-center {navbarOpen ? 'block' : 'hidden'}" id="example-navbar-warning">
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
         <li class="flex items-center">
-          <a class="hover:text-slate-500 text-slate-700 dark:text-slate-100 px-3 py-2 flex items-center text-xs uppercase font-bold" href="http://svelte01.intlighttech.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index-navbar">
+          <a class="hover:text-slate-500 text-slate-700 dark:text-slate-100 px-3 py-2 flex items-center text-xs uppercase font-bold" href="http://svelte01.IntLighttech.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index-navbar">
             <i class="text-slate-400 far fa-file-alt text-lg leading-lg mr-2" />
             Docs
           </a>
@@ -50,14 +50,14 @@
           <IndexDropdown />
         </li>
         <li class="flex items-center">
-          <a class="hover:text-slate-500 text-slate-700 dark:text-slate-100 px-3 py-2 flex items-center text-xs uppercase font-bold" href="https://www.facebook.com/sharer/sharer.php?u=http://svelte01.intlighttech.com" target="_blank">
+          <a class="hover:text-slate-500 text-slate-700 dark:text-slate-100 px-3 py-2 flex items-center text-xs uppercase font-bold" href="https://www.facebook.com/sharer/sharer.php?u=http://svelte01.IntLighttech.com" target="_blank">
             <i class="text-slate-400 fab fa-facebook text-lg leading-lg" />
             <span class="lg:hidden inline-block ml-2">Share</span>
           </a>
         </li>
 
         <li class="flex items-center">
-          <a class="hover:text-slate-500 text-slate-700 dark:text-slate-100 px-3 py-2 flex items-center text-xs uppercase font-bold" href="https://twitter.com/intent/tweet?url=http://svelte01.intlighttech.com" target="_blank">
+          <a class="hover:text-slate-500 text-slate-700 dark:text-slate-100 px-3 py-2 flex items-center text-xs uppercase font-bold" href="https://twitter.com/intent/tweet?url=http://svelte01.IntLighttech.com" target="_blank">
             <i class="text-slate-400 fab fa-twitter text-lg leading-lg" />
             <span class="lg:hidden inline-block ml-2">Tweet</span>
           </a>
