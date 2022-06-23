@@ -27,7 +27,7 @@
 
 <div>
   <Sidebar />
-  <div class="relative md:ml-64 bg-slate-100">
+  <div class="relative md:ml-64 bg-slate-100 dark:bg-slate-900">
     <AdminNavbar />
     <HeaderStats />
     <div class="px-4 md:px-10 mx-auto w-full -m-24">
