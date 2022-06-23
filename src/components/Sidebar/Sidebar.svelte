@@ -228,7 +228,7 @@
         <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
           <li class="inline-flex">
             <a
-              href="http://svelte01.IntLighttech.com/docs/colors/notus"
+              href="http://svelte01.IntLighttech.com/docs/colors"
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
@@ -239,7 +239,7 @@
   
           <li class="inline-flex">
             <a
-              href="http://svelte01.IntLighttech.com/docs/alerts/notus"
+              href="http://svelte01.IntLighttech.com/docs/components"
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
@@ -272,12 +272,12 @@
   
           <li class="inline-flex">
             <a
-              href="https://windicss.org/integrations/vite.html"
+              href="https://windicss.org/"
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
               <i class="fab fa-vuejs mr-2 text-slate-300 text-base"></i>
-              WindiCSS + Vite
+              WindiCSS
             </a>
           </li>
   

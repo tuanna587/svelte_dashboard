@@ -108,5 +108,12 @@
     >
       Profile
     </a>
+    <a
+    use:link
+    href="/blog"
+    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700 dark:text-slate-100"
+  >
+    Blog
+  </a>
   </div>
 </div>
