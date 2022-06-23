@@ -1,4 +1,4 @@
-/* :root {
+:root {
     --prism-foreground: #d4cfbf;
     --prism-background: #1f1f1f;
     --prism-comment: #758575;
@@ -22,10 +22,10 @@
     --prism-line-number-gutter: #eeeeee;
     --prism-line-highlight-background: #444444;
     --prism-selection-background: #444444;
-    --windi-bg: #181818;
-    --windi-hover-bg: #2d2d2d;
-    --windi-text: #f3f4f6;
-    --windi-bc: #2d2d2d;
+    --windi-bg: #FFFFFF;
+    --windi-hover-bg: #EEEEEE;
+    --windi-text: #181818;
+    --windi-bc: #181818;
     --docsearch-container-background: rgba(12, 12, 12, .9);
     --docsearch-modal-background: #181818;
     --docsearch-modal-shadow: none;
@@ -36,7 +36,8 @@
     --docsearch-muted-color: #9ca3af;
     --docsearch-key-gradient: transparent;
     --docsearch-key-shadow: none;
-} */
+    --windi-scrollbar-bg: rgba(182, 193, 210, 0.55);
+} 
 html.dark {
     --prism-foreground: #d4cfbf;
     --prism-background: #1f1f1f;
@@ -85,7 +86,7 @@ body{
     background-color: var(--windi-bg);
 }
 .scrollbar {
-    overflow: auto
+    /* overflow: auto */
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -105,48 +106,10 @@ body{
 .scrollbar:hover::-webkit-scrollbar,.scrollbar:hover::-webkit-scrollbar-thumb,.scrollbar:focus::-webkit-scrollbar,.scrollbar:focus::-webkit-scrollbar-thumb {
     visibility: visible
 }
-
-.navbar-vibrant .scrollbar {
-    overflow: auto
+.hide-sidebar {
+    transform: translateX(-100%);
 }
-
-.navbar-vibrant .scrollbar::-webkit-scrollbar {
-    visibility: hidden;
-    -webkit-appearance: none;
-    width: 6px;
-    height: 6px;
-    background-color: transparent
-}
-
-.navbar-vibrant .scrollbar::-webkit-scrollbar-thumb {
-    visibility: hidden;
-    border-radius: 3px;
-    background-color: rgba(255,255,255,.4)
-}
-
-.navbar-vibrant .scrollbar:hover::-webkit-scrollbar,
-.navbar-vibrant .scrollbar:hover::-webkit-scrollbar-thumb,
-.navbar-vibrant .scrollbar:focus::-webkit-scrollbar,
-.navbar-vibrant .scrollbar:focus::-webkit-scrollbar-thumb {
-    visibility: visible
-}
-
-.firefox .scrollbar {
-    overflow: auto !important;
-    scrollbar-color: var(--windi-scrollbar-bg) transparent;
-    scrollbar-width: thin
-}
-
-.firefox .navbar-vibrant .scrollbar {
-    overflow: auto !important;
-    scrollbar-color: rgba(255,255,255,.4) transparent;
-    scrollbar-width: thin
-}
-
-.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
-    background: var(--windi-scrollbar-bg)
-}
-
-.os-theme-dark>.os-scrollbar:hover>.os-scrollbar-track>.os-scrollbar-handle,.os-theme-dark>.os-scrollbar:focus>.os-scrollbar-track>.os-scrollbar-handle {
-    background: var(--windi-scrollbar-bg)
-}
+/* .hide_sidebar_value {
+    transition: all 0.2s ease;
+    transform: translateX(-16rem);
+} */

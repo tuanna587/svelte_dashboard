@@ -4,17 +4,27 @@
     
     import NotificationDropdown from "@/components/Dropdowns/NotificationDropdown.svelte";
     import UserDropdown from "@/components/Dropdowns/UserDropdown.svelte";
-  
+    import {toggle_sidebar_mobile, hide_sidebar} from '@/stores.js';
     let collapseShow = "hidden";
+
+    let hide_sidebar_value;
+
+    hide_sidebar.subscribe(value => {
+      hide_sidebar_value = value;
+      console.log('hide_sidebar_value',hide_sidebar_value);
+    });
+
+    // console.log('hide_sidebar_value',hide_sidebar_value);
   
     function toggleCollapseShow(classes) {
       collapseShow = classes;
+      toggle_sidebar_mobile.set(!hide_sidebar_value);
     }
   
   </script>
   
   <nav
-    class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 scrollbar md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white dark:bg-slate-900 flex flex-wrap items-center justify-between relative md:w-64 z-11 md:z-10  py-4 px-6 "
+    class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 scrollbar md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white dark:bg-slate-900 flex flex-wrap items-center justify-between relative md:w-64 z-11 md:z-10  py-4 px-6 transition-all" class:hide-sidebar={hide_sidebar_value}
   >
     <div
       class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto"
@@ -46,7 +56,7 @@
       </ul>
       <!-- Collapse -->
       <div
-        class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded {collapseShow}"
+        class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded absolute {collapseShow}" class:absolute={!toggle_sidebar_mobile} class:fixed={toggle_sidebar_mobile}
       >
         <!-- Collapse header -->
         <div

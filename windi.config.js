@@ -113,7 +113,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    plugin(({ addUtilities }) => {
+    plugin(({ addBase, addComponents, addUtilities, theme }) => {
       const newUtilities = {
         '.skew-10deg': {
           transform: 'skewY(-10deg)',
@@ -130,7 +130,7 @@ export default defineConfig({
       };
       addUtilities(newUtilities);
     }),
-    plugin(({ addComponents }) => {
+    plugin(({ addBase, addComponents, addUtilities, theme }) => {
       const buttons = {
         '.btn': {
           padding: '.5rem 1rem',
