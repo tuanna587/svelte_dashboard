@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "svelte": "^3.44.0",
+    "svelte-select": "^4.4.7",
     "vite": "^2.9.12",
     "windicss": "^3.5.4"
   }
