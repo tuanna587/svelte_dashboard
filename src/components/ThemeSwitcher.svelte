@@ -20,7 +20,7 @@
   }
 </script>
 
-<button class="inline-flex text-xl p-2" on:click={switchTheme}>
+<button class="inline-flex text-xl p-2 bg-gray-300 dark:bg-slate-700 rounded-full" on:click={switchTheme}>
   {#if theme_dark}
     <svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style=""
       ><path

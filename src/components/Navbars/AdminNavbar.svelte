@@ -2,17 +2,23 @@
   import UserDropdown from '@/components/Dropdowns/UserDropdown.svelte';
   import ThemeSwitcher from '@/components/ThemeSwitcher.svelte';
   import { link } from 'svelte-spa-router';
-  import { hide_sidebar } from '@/stores.js';
+  import { hide_sidebar, open_search } from '@/stores.js';
 
   let hide_sidebar_value;
+  let open_search_value;
 
   hide_sidebar.subscribe((value) => {
     hide_sidebar_value = value;
-    console.log('hide_sidebar_value', hide_sidebar_value);
+  });
+  open_search.subscribe((value) => {
+    open_search_value = value;
   });
 
   function toggleSidebar() {
     hide_sidebar.set(!hide_sidebar_value);
+  }
+  function toggleSearch() {
+    open_search.set(!open_search_value);
   }
 </script>
 
@@ -26,18 +32,29 @@
     <!-- Brand -->
     <a class="text-white dark:text-red-600 text-sm uppercase hidden lg:inline-block font-semibold" href="/admin" use:link> Dashboard </a>
     <!-- Form -->
-    <form class="md:flex hidden flex-row flex-wrap items-center lg:mr-auto ml-3">
+    <!-- <form class="md:flex hidden flex-row flex-wrap items-center lg:mr-auto ml-3">
       <div class="relative flex w-full flex-wrap items-stretch">
         <span class="z-10 h-full leading-snug font-normal absolute text-center text-slate-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
           <i class="fas fa-search" />
         </span>
         <input type="text" placeholder="Search here..." class="border-0 px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:ring w-full pl-10" />
       </div>
-    </form>
-    <!-- Theme switcher -->
-    <div class="text-white text-sm uppercase hidden lg:inline-block font-semibold">
-      <ThemeSwitcher />
+    </form> -->
+    <div class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
+      <!-- Search -->
+      <button class="p-2 bg-gray-300 dark:bg-slate-700 rounded-full text-sky-400 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center outline-none focus:outline-none mr-2" type="button" on:click={toggleSearch}>
+        <svg class="pointer-events-none h-6 w-6 fill-white" xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="M20.47 21.53a.75.75 0 1 0 1.06-1.06l-1.06 1.06Zm-9.97-4.28a6.75 6.75 0 0 1-6.75-6.75h-1.5a8.25 8.25 0 0 0 8.25 8.25v-1.5ZM3.75 10.5a6.75 6.75 0 0 1 6.75-6.75v-1.5a8.25 8.25 0 0 0-8.25 8.25h1.5Zm6.75-6.75a6.75 6.75 0 0 1 6.75 6.75h1.5a8.25 8.25 0 0 0-8.25-8.25v1.5Zm11.03 16.72-5.196-5.197-1.061 1.06 5.197 5.197 1.06-1.06Zm-4.28-9.97c0 1.864-.755 3.55-1.977 4.773l1.06 1.06A8.226 8.226 0 0 0 18.75 10.5h-1.5Zm-1.977 4.773A6.727 6.727 0 0 1 10.5 17.25v1.5a8.226 8.226 0 0 0 5.834-2.416l-1.061-1.061Z"
+          /></svg
+        >
+      </button>
+      <!-- Theme switcher -->
+      <div class="text-white text-sm uppercase hidden lg:inline-block font-semibold">
+        <ThemeSwitcher />
+      </div>
     </div>
+
     <!-- User -->
     <ul class="flex-col md:flex-row list-none items-center hidden md:flex">
       <UserDropdown />

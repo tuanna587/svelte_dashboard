@@ -9,6 +9,7 @@
   import Sidebar from '@/components/Sidebar/Sidebar.svelte';
   import HeaderStats from '@/components/Headers/HeaderStats.svelte';
   import FooterAdmin from '@/components/Footers/FooterAdmin.svelte';
+  import AdminSearch from '@/components/Search/AdminSearch.svelte';
 
   const routes = {
     '/admin/dashboard': wrap({
@@ -36,6 +37,7 @@
   <Sidebar />
   <div class="relative md:ml-64 bg-slate-100 dark:bg-slate-900 transition-all" class:md:ml-0={hide_sidebar_value}>
     <AdminNavbar />
+    <AdminSearch />
     <HeaderStats />
     <div class="px-4 md:px-10 mx-auto w-full -m-24">
       <Router {routes} />
