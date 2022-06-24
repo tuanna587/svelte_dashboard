@@ -15,7 +15,7 @@
 
 <div class="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24" class:hidden={!open_search_value} class:flex={open_search_value} id="headlessui-dialog-8" role="dialog" aria-modal="true">
   <div class="fixed inset-0 bg-slate-900/25 backdrop-blur transition-opacity opacity-100" on:click={toggleSearch}/>
-  <div class="relative w-full max-w-lg transform px-4 transition-all opacity-100 scale-100">
+  <div class="relative w-full max-w-1/2 transform px-4 transition-all opacity-100 scale-100">
     <div class="overflow-hidden rounded-lg bg-white shadow-md" id="headlessui-dialog-panel-11">
       <div class="relative">
         <input class="block w-full appearance-none bg-transparent py-4 pl-4 pr-12 text-base text-slate-900 placeholder:text-slate-600 focus:outline-none sm:text-sm sm:leading-6" placeholder="Find anything..." aria-label="Search components" id="headlessui-combobox-input-12" role="combobox" type="text" aria-expanded="false" tabindex="0" style="caret-color: rgb(107, 114, 128);" /><svg
@@ -26,7 +26,7 @@
           /></svg
         >
       </div>
-      <ul class="max-h-[18.375rem] divide-y divide-slate-200 overflow-y-auto rounded-b-lg border-t border-slate-200 text-sm leading-6" role="listbox" id="headlessui-combobox-options-13">
+      <ul class="max-h-[18.375rem] divide-y divide-slate-200 overflow-y-auto rounded-b-lg border-t border-slate-200 text-sm leading-6 &>" role="listbox" id="headlessui-combobox-options-13">
         <li class="flex items-center justify-between p-4" id="headlessui-combobox-option-14" role="option" tabindex="-1"><span class="whitespace-nowrap font-semibold text-slate-900">Action Panels</span><span class="ml-4 text-right text-xs text-slate-600">Application UI / Forms</span></li>
         <li class="flex items-center justify-between p-4" id="headlessui-combobox-option-15" role="option" tabindex="-1"><span class="whitespace-nowrap font-semibold text-slate-900">Alerts</span><span class="ml-4 text-right text-xs text-slate-600">Application UI / Feedback</span></li>
         <li class="flex items-center justify-between p-4" id="headlessui-combobox-option-16" role="option" tabindex="-1"><span class="whitespace-nowrap font-semibold text-slate-900">Avatars</span><span class="ml-4 text-right text-xs text-slate-600">Application UI / Elements</span></li>
