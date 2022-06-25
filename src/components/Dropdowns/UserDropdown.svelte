@@ -18,6 +18,7 @@
       });
     }
   };
+
 </script>
 
 <div>
@@ -29,7 +30,7 @@
   >
     <div class="items-center flex">
       <span
-        class="w-12 h-12 text-sm text-white bg-slate-200 inline-flex items-center justify-center rounded-full"
+        class="w-12 h-12 md:w-8 md:h-8 text-sm text-white bg-slate-200 inline-flex items-center justify-center rounded-full" 
       >
         <img
           alt="..."

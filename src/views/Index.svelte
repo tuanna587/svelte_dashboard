@@ -25,10 +25,10 @@
       <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
         <div class="pt-32 sm:pt-0">
           <h2 class="font-semibold text-4xl text-slate-600">
-            Notus Svelte - A beautiful extension for Tailwind CSS.
+            IntLight Svelte - A beautiful extension for Tailwind CSS.
           </h2>
           <p class="mt-4 text-lg leading-relaxed text-slate-500">
-            Notus Svelte is Free and Open Source. It does not change any of the CSS from
+            IntLight Svelte is Free and Open Source. It does not change any of the CSS from
             <a
               href="https://tailwindcss.com/?ref=IntLighttech"
               class="text-slate-600"
@@ -137,7 +137,7 @@
                     CSS Components
                   </h6>
                   <p class="mb-4 text-slate-500 dark:text-slate-400">
-                    Notus Svelte comes with a huge number of Fully Coded CSS
+                    IntLight Svelte comes with a huge number of Fully Coded CSS
                     components.
                   </p>
                 </div>
@@ -186,7 +186,7 @@
                   </h6>
                   <p class="mb-4 text-slate-500 dark:text-slate-400">
                     Built by developers for developers. You will love how easy is
-                    to to work with Notus Svelte.
+                    to to work with IntLight Svelte.
                   </p>
                 </div>
               </div>
@@ -565,7 +565,7 @@
       <div class="w-full md:w-6/12 px-12 md:px-4">
         <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
         <p class="text-lg leading-relaxed mt-4 mb-4 text-slate-500 dark:text-slate-400">
-          Notus Svelte is a completly new product built using our past
+          IntLight Svelte is a completly new product built using our past
           experience in web templates. Take the examples we made for you and start
           playing with them.
         </p>

@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import { useRegisterSW } from 'virtual:pwa-register/svelte';
 
   const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW({
     onRegistered(swr) {
-      console.log(`SW registered: ${swr}`);
+      console.log('SW registered', swr);
     },
     onRegisterError(error) {
       console.log('SW registration error', error);
@@ -18,7 +18,7 @@
   $: toast = $offlineReady || $needRefresh;
 </script>
 
-{#if toast}
+<!-- {#if toast}
   <div class="pwa-toast" role="alert">
     <div class="message">
       {#if $offlineReady}
@@ -32,30 +32,29 @@
     {/if}
     <button on:click={close}> Close </button>
   </div>
+{/if} -->
+{#if toast}
+  <div class="pwa-toast bg-white fixed top-10 left-0 right-0 w-11/12 mx-auto py-3 px-5 rounded flex items-center justify-between shadow-xl">
+    <div class="pwa-toast-logo"><img src="/assets/svelte.png" alt="svelte" class="w-10" /></div>
+    <div class="pwa-toast-content">
+      ⏰
+      {#if $offlineReady}
+        <b> App ready to work offline </b>
+      {:else}
+        <b> New content available, click on reload button to update. </b>
+      {/if}
+    </div>
+    <div class="pwa-toast-right">
+      {#if $needRefresh}
+        <button on:click={() => updateServiceWorker(true)} class="reload text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"> Reload </button>
+      {/if}
+      <button on:click={close} class="close ml-1 text-white font-bold px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"> Close </button>
+    </div>
+  </div>
 {/if}
 
 <style>
   .pwa-toast {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: 16px;
-    padding: 12px;
-    border: 1px solid #8885;
-    border-radius: 4px;
-    z-index: 1;
-    text-align: left;
-    box-shadow: 3px 4px 5px 0 #8885;
-    background-color: white;
-  }
-  .pwa-toast .message {
-    margin-bottom: 8px;
-  }
-  .pwa-toast button {
-    border: 1px solid #8885;
-    outline: none;
-    margin-right: 5px;
-    border-radius: 2px;
-    padding: 3px 10px;
+    z-index: 1000000;
   }
 </style>
