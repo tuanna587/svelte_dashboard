@@ -18,7 +18,7 @@
   <div class="relative w-full max-w-1/2 transform px-4 transition-all opacity-100 scale-100">
     <div class="overflow-hidden rounded-lg bg-white shadow-md" id="headlessui-dialog-panel-11">
       <div class="relative">
-        <input class="block w-full appearance-none bg-transparent py-4 pl-4 pr-12 text-base text-slate-900 placeholder:text-slate-600 focus:outline-none sm:text-sm sm:leading-6" placeholder="Find anything..." aria-label="Search components" id="headlessui-combobox-input-12" role="combobox" type="text" aria-expanded="false" tabindex="0" style="caret-color: rgb(107, 114, 128);" /><svg
+        <input class="block w-full appearance-none bg-transparent py-4 pl-4 pr-12 text-base text-slate-900 placeholder:text-slate-600 focus:outline-none sm:text-sm sm:leading-6 border-0 border-current " placeholder="Find anything..." aria-label="Search components" id="headlessui-combobox-input-12" role="combobox" type="text" aria-expanded="false" tabindex="0" style="caret-color: rgb(107, 114, 128);" /><svg
           class="pointer-events-none absolute top-4 right-4 h-6 w-6 fill-slate-400"
           xmlns="http://www.w3.org/2000/svg"
           ><path

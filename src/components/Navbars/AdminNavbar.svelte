@@ -31,7 +31,7 @@
       <i class="fas fa-bars" />
     </button>
     <!-- Brand -->
-    <a class="text-white dark:text-red-600 text-sm uppercase hidden lg:inline-block font-semibold" href="/admin" use:link> Dashboard </a>
+    <a class="text-white dark:text-red-600 text-sm uppercase hidden lg:inline-block font-semibold" href="/admin/" use:link> Dashboard </a>
     <!-- Form -->
     <!-- <form class="md:flex hidden flex-row flex-wrap items-center lg:mr-auto ml-3">
       <div class="relative flex w-full flex-wrap items-stretch">

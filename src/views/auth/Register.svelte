@@ -62,13 +62,13 @@
       </div>
       <div class="flex flex-wrap mt-6 relative">
         <div class="w-1/2">
-          <a href="/auth/login" use:link class="text-slate-200">
-            <small>Login</small>
+          <a href="/auth/forgotpass" use:link on:click={(e) => e.preventDefault()} class="text-slate-200">
+            <small>Forgot password?</small>
           </a>
         </div>
         <div class="w-1/2 text-right">
-          <a use:link href="/auth/register" class="text-slate-200">
-            <small>Create new account</small>
+          <a href="/auth/login" use:link class="text-slate-200">
+            <small>Login</small>
           </a>
         </div>
       </div>

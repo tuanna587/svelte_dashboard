@@ -46,9 +46,9 @@
     </div>
     <div class="pwa-toast-right">
       {#if $needRefresh}
-        <button on:click={() => updateServiceWorker(true)} class="reload text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"> Reload </button>
+        <button on:click={() => {updateServiceWorker(true); close(); }} class="reload text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"> Reload </button>
       {/if}
-      <button on:click={close} class="close ml-1 text-white font-bold px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"> Close </button>
+      <button on:click={close} class="close ml-1 text-white font-bold px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 bg-slate-700 active:bg-slate-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150 shadow-md"> Close </button>
     </div>
   </div>
 {/if}

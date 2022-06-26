@@ -36,7 +36,7 @@
                 </h1>
                 <p class="mt-4 text-lg text-slate-200">
                   This is a simple example of a Landing Page you can build using
-                  Notus Svelte. It features multiple CSS components
+                  IntLight Svelte. It features multiple CSS components
                   based on the Tailwind CSS design system.
                 </p>
               </div>
@@ -149,7 +149,7 @@
                 Just make sure you enable them first via JavaScript.
               </p>
               <a use:link href="/" class="font-bold text-slate-700 mt-8">
-                Check Notus Svelte!
+                Check IntLight Svelte!
               </a>
             </div>
   

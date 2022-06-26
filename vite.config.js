@@ -13,8 +13,9 @@ export default defineConfig({
     VitePWA({
       srcDir: 'src',
       filename: 'sw.js',
-      registerType: 'prompt', //autoUpdate | prompt
-      strategies: 'injectManifest',
+      // using autoupdate if dont show message update to user
+      // registerType: 'autoUpdate',
+      // strategies: 'injectManifest',
       includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'Svelte + Vite + WindiCSS App',
@@ -53,6 +54,20 @@ export default defineConfig({
               cacheableResponse: {
                 statuses: [0, 200]
               }
+            }
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'gstatic-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              },
             }
           },
           {
