@@ -6,7 +6,7 @@
   import Index from '@/views/Index.svelte';
   import Landing from '@/views/Landing.svelte';
   import NotFound from '@/views/NotFound.svelte';
-  import PWAReload from '@/PWAReload.svelte';
+  import PWAReload from '@/components/PWAReload.svelte';
 
   const routes = {
     '/': Index,
