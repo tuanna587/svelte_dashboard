@@ -33,5 +33,5 @@
 </script>
 <PWAReload/>
 <Router {routes} />
-<p>The current page is: {$location}</p>
-<p>The querystring is: {$querystring}</p>
+<!-- <p>The current page is: {$location}</p>
+<p>The querystring is: {$querystring}</p> -->

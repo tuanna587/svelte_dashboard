@@ -11,9 +11,12 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fullcalendar/common": "^5.11.0",
+    "@fullcalendar/core": "^5.11.0",
     "@popperjs/core": "^2.11.5",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
     "chart.js": "^3.8.0",
+    "svelte-fullcalendar": "^2.0.0-beta.0",
     "svelte-preprocess": "^4.10.5",
     "svelte-spa-router": "^3.2.0",
     "vite-plugin-pwa": "^0.12.0",

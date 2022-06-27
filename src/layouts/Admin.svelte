@@ -1,8 +1,8 @@
 <script>
   // import { Router, Route } from "svelte-spa-router";
   import { wrap } from 'svelte-spa-router/wrap';
-  import Router, { location, link, querystring } from 'svelte-spa-router';
-  import { hide_sidebar } from '@/stores.js';
+  import Router, { push, pop, location, link, querystring } from 'svelte-spa-router';
+  import { hide_sidebar, admin_logged_in } from '@/stores.js';
 
   // components for this layout
   import AdminNavbar from '@/components/Navbars/AdminNavbar.svelte';
@@ -12,6 +12,12 @@
   import AdminSearch from '@/components/Search/AdminSearch.svelte';
 
   const routes = {
+    '/admin/login': wrap({
+      asyncComponent: () => import('@/views/admin/Login.svelte'),
+    }),
+    '/admin/register': wrap({
+      asyncComponent: () => import('@/views/admin/Register.svelte'),
+    }),
     '/admin/dashboard': wrap({
       asyncComponent: () => import('@/views/admin/Dashboard.svelte'),
     }),
@@ -27,21 +33,41 @@
   };
 
   let hide_sidebar_value;
+  let is_logged_in;
+
+  admin_logged_in.subscribe((value) => {
+    is_logged_in = value;
+    checkAuth();
+  });
+
+  function checkAuth() {
+    console.log('checkAuth is_logged_in', is_logged_in);
+    if (!is_logged_in && !/(login|register)/.test($location)) {
+      push('/admin/login');
+    }
+  }
+  checkAuth();
 
   hide_sidebar.subscribe((value) => {
     hide_sidebar_value = value;
   });
 </script>
 
-<div class="main">
-  <Sidebar />
-  <div class="relative md:ml-64 bg-slate-100 dark:bg-slate-900 transition-all" class:md:ml-0={hide_sidebar_value}>
-    <AdminNavbar />
-    <AdminSearch />
-    <HeaderStats />
-    <div class="px-4 md:px-10 mx-auto w-full -m-24">
-      <Router {routes} />
-      <FooterAdmin />
+{#if /(login|register)/.test($location)}
+  <div class="main">
+    <Router {routes} />
+  </div>
+{:else}
+  <div class="main">
+    <Sidebar />
+    <div class="relative md:ml-64 bg-slate-100 dark:bg-slate-900 transition-all" class:md:ml-0={hide_sidebar_value}>
+      <AdminNavbar />
+      <AdminSearch />
+      <HeaderStats />
+      <div class="px-4 md:px-10 mx-auto w-full -m-24">
+        <Router {routes} />
+        <FooterAdmin />
+      </div>
     </div>
   </div>
-</div>
+{/if}

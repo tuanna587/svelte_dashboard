@@ -109,7 +109,13 @@ body{
 .hide-sidebar {
     transform: translateX(-100%);
 }
-/* .hide_sidebar_value {
-    transition: all 0.2s ease;
-    transform: translateX(-16rem);
-} */
+
+
+input:focus-within ~ label,
+input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-6;
+}
+
+input:focus-within ~ label {
+  @apply text-blue-500;
+}

@@ -82,6 +82,7 @@ export default defineConfig({
         80: '.8',
       },
       zIndex: {
+        "-1": "-1",
         2: 2,
         3: 3,
       },

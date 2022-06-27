@@ -17,22 +17,6 @@
 
   $: toast = $offlineReady || $needRefresh;
 </script>
-
-<!-- {#if toast}
-  <div class="pwa-toast" role="alert">
-    <div class="message">
-      {#if $offlineReady}
-        <span> App ready to work offline </span>
-      {:else}
-        <span> New content available, click on reload button to update. </span>
-      {/if}
-    </div>
-    {#if $needRefresh}
-      <button on:click={() => updateServiceWorker(true)}> Reload </button>
-    {/if}
-    <button on:click={close}> Close </button>
-  </div>
-{/if} -->
 {#if toast}
   <div class="pwa-toast bg-white fixed top-10 left-0 right-0 w-11/12 mx-auto py-3 px-5 rounded flex items-center justify-between shadow-xl">
     <div class="pwa-toast-logo"><img src="/assets/svelte.png" alt="svelte" class="w-10" /></div>

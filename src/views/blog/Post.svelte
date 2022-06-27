@@ -73,7 +73,7 @@
   <div class=" px-8 py-5 lg:py-8 mx-auto xl:px-5 max-w-screen-lg">
     <article class="max-w-screen-md mx-auto relative">
       <div class="artilce-content relative flex flex-wrap md:flex-nowrap">
-        <div class="article-left md:w-[80px] my-3 relative">
+        <div class="article-left px-0 md:px-3 my-3 relative">
           <ul class="social-pin flex items-center md:block static md:sticky text-center left-0 top-10">
             <li>
               <a class="p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center ml-2 md:mt-2" href="https://www.facebook.com/ngayaybaygio" on:click|preventDefault={() => share('facebook')}>

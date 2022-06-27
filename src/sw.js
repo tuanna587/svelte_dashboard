@@ -6,6 +6,7 @@ precacheAndRoute(self.__WB_MANIFEST);
 
 //using for registerType is prompt
 self.addEventListener('message', (event) => {
+  console.log('message',message);
   if (event.data && event.data.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
