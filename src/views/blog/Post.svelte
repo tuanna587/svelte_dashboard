@@ -72,16 +72,16 @@
   </div>
   <div class=" px-8 py-5 lg:py-8 mx-auto xl:px-5 max-w-screen-lg">
     <article class="max-w-screen-md mx-auto relative">
-      <div class="artilce-content relative flex">
-        <div class="article-left w-[80px] my-3 relative">
-          <ul class="social-pin sticky text-center left-0 top-10 hidden md:block">
+      <div class="artilce-content relative flex flex-wrap md:flex-nowrap">
+        <div class="article-left md:w-[80px] my-3 relative">
+          <ul class="social-pin flex items-center md:block static md:sticky text-center left-0 top-10">
             <li>
-              <a class="p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center mt-2" href="https://www.facebook.com/ngayaybaygio" on:click|preventDefault={() => share('facebook')}>
+              <a class="p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center ml-2 md:mt-2" href="https://www.facebook.com/ngayaybaygio" on:click|preventDefault={() => share('facebook')}>
                 <svg class="h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
               </a>
             </li>
             <li>
-              <a href="http://twitter.com/midinthenight" on:click|preventDefault={() => share('twitter')} class="social-twitter p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center mt-2" data-type="tw" rel="nofollow" title="Share twitter">
+              <a href="http://twitter.com/midinthenight" on:click|preventDefault={() => share('twitter')} class="social-twitter p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center ml-2 md:mt-2" data-type="tw" rel="nofollow" title="Share twitter">
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                   ><path
                     d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
@@ -89,17 +89,17 @@
                 >
               </a>
             </li>
-            <li class="social-save-post p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center mt-2 flex flex-col" data-token="" data-article-id="" title="Save post" on:click={savePost}>
+            <li class="social-save-post p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center ml-2 md:mt-2 flex flex-col" data-token="" data-article-id="" title="Save post" on:click={savePost}>
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M384 48V512l-192-112L0 512V48C0 21.5 21.5 0 48 0h288C362.5 0 384 21.5 384 48z" /></svg>
             </li>
             <li>
-              <a href="." on:click={comment} class="social-comment p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center mt-2 relative" title="Comment">
+              <a href="." on:click={comment} class="social-comment p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center ml-2 md:mt-2 relative" title="Comment">
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 .0272 125.1 .0272 240c0 49.63 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734C1.979 478.2 4.75 480 8 480c66.25 0 115.1-31.76 140.6-51.39C181.2 440.9 217.6 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32z" /></svg>
                 <span class="social-comment-count absolute top-[-5px] right-0 bg-red-700 focus:bg-red-500 focus:bg-opacity-50 rounded-full text-white p-1 text-[8px] mw-[16px]">5</span></a
               >
             </li>
             <li>
-              <a href="." on:click={print} class="social-print p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center mt-2" title="In">
+              <a href="." on:click={print} class="social-print p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center ml-2 md:mt-2" title="In">
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                   ><path
                     d="M448 192H64C28.65 192 0 220.7 0 256v96c0 17.67 14.33 32 32 32h32v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h32c17.67 0 32-14.33 32-32V256C512 220.7 483.3 192 448 192zM384 448H128v-96h256V448zM432 296c-13.25 0-24-10.75-24-24c0-13.27 10.75-24 24-24s24 10.73 24 24C456 285.3 445.3 296 432 296zM128 64h229.5L384 90.51V160h64V77.25c0-8.484-3.375-16.62-9.375-22.62l-45.25-45.25C387.4 3.375 379.2 0 370.8 0H96C78.34 0 64 14.33 64 32v128h64V64z"
@@ -108,7 +108,7 @@
               </a>
             </li>
             <li>
-              <a href="/blog/category" use:link class="social-return p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center mt-2" title="Back to Category">
+              <a href="/blog/category" use:link class="social-return p-2 bg-gray-300 bg-opacity-50 focus:bg-slate-700 hover:bg-slate-700 transition hover:text-white focus:bg-opacity-50 rounded-full text-black h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center ml-2 md:mt-2" title="Back to Category">
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z" /></svg>
               </a>
             </li>
