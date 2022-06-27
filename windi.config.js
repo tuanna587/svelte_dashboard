@@ -128,9 +128,7 @@ export default defineConfig({
           left: '-50px',
         },
       };
-      addUtilities(newUtilities);
-    }),
-    plugin(({ addBase, addComponents, addUtilities, theme }) => {
+
       const buttons = {
         '.btn': {
           padding: '.5rem 1rem',
@@ -152,6 +150,7 @@ export default defineConfig({
           },
         },
       };
+      addUtilities(newUtilities);
       addComponents(buttons);
     }),
     require('windicss/plugin/filters'),
