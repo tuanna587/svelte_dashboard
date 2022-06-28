@@ -42,7 +42,7 @@
 
         <div class="signin-other flex items-center justify-between mt-4">
           <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4" />
-          <span class="w-5/6 px-4 py-3 text-xs md:text-md font-bold text-center">Sign in with Facebook</span>
+          <span class="text-xs text-center text-gray-500 uppercase dark:text-gray-400">or sign in with</span>
           <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/4" />
         </div>
 
