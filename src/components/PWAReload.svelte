@@ -20,7 +20,7 @@
 {#if toast}
   <div class="pwa-toast bg-white fixed top-10 left-0 right-0 w-11/12 mx-auto py-3 px-5 rounded flex md:items-center md:justify-between shadow-xl">
     <div class="pwa-toast-logo"><img src="/assets/svelte.png" alt="svelte" class="w-10" /></div>
-    <div class="pwa-toast-content dark:text-slate-800">
+    <div class="pwa-toast-content font-sm dark:text-slate-800">
       ⏰
       {#if $offlineReady}
         <b> App ready to work offline </b>

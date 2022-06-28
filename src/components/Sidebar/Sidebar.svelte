@@ -11,10 +11,7 @@
 
   hide_sidebar.subscribe((value) => {
     hide_sidebar_value = value;
-    console.log('hide_sidebar_value', hide_sidebar_value);
   });
-
-  // console.log('hide_sidebar_value',hide_sidebar_value);
 
   function toggleCollapseShow(classes) {
     collapseShow = classes;
@@ -22,14 +19,17 @@
   }
 </script>
 
-<nav class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 scrollbar md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white dark:bg-slate-900 flex flex-wrap items-center justify-between relative md:w-64 z-11 md:z-10  py-4 px-6 transition-all" class:hide-sidebar={hide_sidebar_value}>
+<nav class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 scrollbar md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white dark:bg-slate-900 flex flex-wrap items-center justify-between relative md:w-64 z-11 md:z-10 py-4 px-6 transition-all" class:hide-sidebar={hide_sidebar_value}>
   <div class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
     <!-- Toggler -->
-    <button class="cursor-pointer text-black dark:text-red-600 opacity-50 dark:opacity-80 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent" type="button" on:click={() => toggleCollapseShow('bg-white m-2 py-3 px-6')}>
+    <button class="cursor-pointer text-black dark:text-red-600 opacity-50 dark:opacity-80 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent" type="button" on:click={() => toggleCollapseShow('bg-white p-2 show')}>
       <i class="fas fa-bars" />
     </button>
     <!-- Brand -->
-    <a use:link class="md:block text-left md:pb-2 text-slate-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0" href="/"> IntLight Svelte </a>
+    <a use:link class="flex items-center text-left md:pb-2 text-slate-600 mr-0 whitespace-nowrap text-sm uppercase font-bold p-4 px-0" href="/"> 
+      <img src="/assets/svelte.png" alt="Home" class="w-10 h-10 p-2 rounded-full shadow-md hover:shadow-lg bg-white dark:bg-slate-700 mr-3">
+      <span class="logo-text">Admin Svelte</span> 
+    </a>
     <!-- User -->
     <ul class="md:hidden items-center flex flex-wrap list-none">
       <li class="inline-block relative">
@@ -40,7 +40,7 @@
       </li>
     </ul>
     <!-- Collapse -->
-    <div class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded absolute {collapseShow}" class:absolute={!toggle_sidebar_mobile} class:fixed={toggle_sidebar_mobile}>
+    <div class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden md:h-auto h-full items-center flex-1 rounded absolute {collapseShow}" class:absolute={!toggle_sidebar_mobile} class:fixed={toggle_sidebar_mobile}>
       <!-- Collapse header -->
       <div class="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-slate-200">
         <div class="flex flex-wrap">
@@ -54,15 +54,6 @@
           </div>
         </div>
       </div>
-      <!-- Form -->
-      <form class="mt-6 mb-4 md:hidden">
-        <div class="mb-3 pt-0">
-          <input type="text" placeholder="Search" class="border-0 px-3 py-2 h-12 border border-solid border-slate-500 placeholder-slate-300 text-slate-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal" />
-        </div>
-      </form>
-
-      <!-- Divider -->
-      <hr class="my-4 md:min-w-full" />
       <!-- Heading -->
       <h6 class="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">Admin Layout Pages</h6>
       <!-- Navigation -->

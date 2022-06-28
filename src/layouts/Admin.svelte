@@ -2,7 +2,18 @@
   // import { Router, Route } from "svelte-spa-router";
   import { wrap } from 'svelte-spa-router/wrap';
   import Router, { push, pop, location, link, querystring } from 'svelte-spa-router';
-  import { hide_sidebar, admin_logged_in } from '@/stores.js';
+  import { hide_sidebar } from '@/stores.js';
+  import adminAuthStore from '@/stores/adminAuth';
+
+  adminAuthStore.subscribe(({ isLoggedIn }) => {
+    console.log('adminAuthStore isLoggedIn --> ', isLoggedIn);
+    if (isLoggedIn && /(login|register|forgotpass)/.test($location)) {
+      push('/admin/dashboard');
+    }
+    if (!isLoggedIn && !/(login|register|forgotpass)/.test($location)) {
+      push('/admin/auth/login');
+    }
+  });
 
   // components for this layout
   import AdminNavbar from '@/components/Navbars/AdminNavbar.svelte';
@@ -12,11 +23,14 @@
   import AdminSearch from '@/components/Search/AdminSearch.svelte';
 
   const routes = {
-    '/admin/login': wrap({
+    '/admin/auth/login': wrap({
       asyncComponent: () => import('@/views/admin/Login.svelte'),
     }),
-    '/admin/register': wrap({
+    '/admin/auth/register': wrap({
       asyncComponent: () => import('@/views/admin/Register.svelte'),
+    }),
+    '/admin/auth/forgotpass': wrap({
+      asyncComponent: () => import('@/views/admin/Forgotpass.svelte'),
     }),
     '/admin/dashboard': wrap({
       asyncComponent: () => import('@/views/admin/Dashboard.svelte'),
@@ -33,27 +47,12 @@
   };
 
   let hide_sidebar_value;
-  let is_logged_in;
-
-  admin_logged_in.subscribe((value) => {
-    is_logged_in = value;
-    checkAuth();
-  });
-
-  function checkAuth() {
-    console.log('checkAuth is_logged_in', is_logged_in);
-    if (!is_logged_in && !/(login|register)/.test($location)) {
-      push('/admin/login');
-    }
-  }
-  checkAuth();
-
   hide_sidebar.subscribe((value) => {
     hide_sidebar_value = value;
   });
 </script>
 
-{#if /(login|register)/.test($location)}
+{#if /(login|register|forgotpass)/.test($location)}
   <div class="main">
     <Router {routes} />
   </div>

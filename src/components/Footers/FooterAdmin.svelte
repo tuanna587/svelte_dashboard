@@ -16,7 +16,7 @@
             href="http://svelte01.IntLighttech.com?ref=ns-footer-admin"
             class="text-slate-500 hover:text-slate-700 text-sm font-semibold py-1"
           >
-            IntLight Tech
+            IntLightTech
           </a>
         </div>
       </div>
@@ -27,7 +27,7 @@
               href="http://svelte01.IntLighttech.com?ref=ns-footer-admin"
               class="text-slate-600 hover:text-slate-800 text-sm font-semibold block py-1 px-3"
             >
-              IntLight Tech
+              IntLightTech
             </a>
           </li>
           <li>
