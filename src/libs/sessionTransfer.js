@@ -1,5 +1,5 @@
 // transfers sessionStorage from one tab to another
-var sessionStorage_transfer = function (event) {
+let sessionStorage_transfer = function (event) {
   if (!event) {
     event = window.event;
   } // ie suq

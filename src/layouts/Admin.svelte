@@ -1,19 +1,8 @@
 <script>
   // import { Router, Route } from "svelte-spa-router";
   import { wrap } from 'svelte-spa-router/wrap';
-  import Router, { push, pop, location, link, querystring } from 'svelte-spa-router';
+  import Router, { location } from 'svelte-spa-router';
   import { hide_sidebar } from '@/stores.js';
-  import adminAuthStore from '@/stores/adminAuth';
-
-  // adminAuthStore.subscribe(({ isLoggedIn }) => {
-  //   console.log('adminAuthStore isLoggedIn --> ', isLoggedIn);
-  //   if (isLoggedIn && /(login|register|forgotpass)/.test($location)) {
-  //     push('/admin/dashboard');
-  //   }
-  //   if (!isLoggedIn && !/(login|register|forgotpass)/.test($location)) {
-  //     push('/admin/auth/login');
-  //   }
-  // });
 
   // components for this layout
   import AdminNavbar from '@/components/Navbars/AdminNavbar.svelte';

@@ -16,6 +16,7 @@ function getAuthSessionData() {
       sessionStorage.removeItem('adminAuthStore');
     }
   }
+  adminAuthStore.set(user);
   return user;
 }
 // console.log('user_session',user_session);

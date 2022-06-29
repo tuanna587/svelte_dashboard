@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { createPopper } from '@popperjs/core';
   import adminAuthStore from '@/stores/adminAuth';
   import { push } from 'svelte-spa-router';
@@ -19,11 +20,13 @@
   clickOutside(popoverDropdownRef);
 
   adminAuthStore.subscribe(async (data) => {
-    if (data.user) {
+    if (data.user !== null) {
+      // console.log('data user', data);
       user.fullname = data.user.displayName;
       user.avatar = await loadImage(data.user.photoURL);
       user.email = data.user.email;
       user.uid = data.user.uid;
+      // console.log('user', user);
     }
   });
 
@@ -45,6 +48,18 @@
     });
     push('/admin/auth/login');
   }
+
+  function loadUserProfile() {}
+
+  onMount(async () => {
+    // let data = adminAuthStore.get();
+    // if (data.user) {
+    //   user.fullname = data.user.displayName;
+    //   user.avatar = await loadImage(data.user.photoURL);
+    //   user.email = data.user.email;
+    //   user.uid = data.user.uid;
+    // }
+  });
 </script>
 
 <div class="dropdown">

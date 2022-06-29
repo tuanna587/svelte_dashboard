@@ -1,15 +1,22 @@
 // Import the functions you need from the SDKs you need
+import { tick } from 'svelte';
+import { push } from 'svelte-spa-router';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
 import adminAuthStore from '@/stores/adminAuth';
 
 //save to store
-function saveStore(user) {
+async function saveStore(user) {
+  let isLoggedIn = user !== null;
   adminAuthStore.set({
-    isLoggedIn: user !== null,
+    isLoggedIn: isLoggedIn,
     user,
   });
+  await tick();
+  if (isLoggedIn) {
+    push('/admin/dashboard');
+  }
 }
 //check state
 function checkFirebaseAuthState(auth, provider, callback) {
