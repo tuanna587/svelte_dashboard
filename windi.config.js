@@ -36,6 +36,13 @@ export default defineConfig({
         xl: '1280px',
         '2xl': '1536px',
       },
+      marginTop: {
+        '24': '-6rem',
+      },
+      paddingTop: {
+        '28': '7rem',
+        '30': '7.5rem',
+      },
       maxHeight: {
         '860-px': '860px',
       },

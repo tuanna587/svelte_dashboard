@@ -26,7 +26,7 @@
       <i class="fas fa-bars" />
     </button>
     <!-- Brand -->
-    <a use:link class="flex items-center text-left md:pb-2 text-slate-600 mr-0 whitespace-nowrap text-sm uppercase font-bold p-4 px-0" href="/"> 
+    <a href="/admin/dashboard" use:link class="flex items-center text-left md:pb-2 text-slate-600 mr-0 whitespace-nowrap text-sm uppercase font-bold p-4 px-0"> 
       <img src="/assets/svelte.png" alt="Home" class="w-10 h-10 p-2 rounded-full shadow-md hover:shadow-lg bg-white dark:bg-slate-700 mr-3">
       <span class="logo-text">Admin Svelte</span> 
     </a>
@@ -113,21 +113,20 @@
       <!-- Divider -->
       <hr class="my-4 md:min-w-full" />
       <!-- Heading -->
-      <h6 class="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">No Layout Pages</h6>
+      <h6 class="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">Blog</h6>
       <!-- Navigation -->
 
       <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
         <li class="items-center">
-          <a use:link class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block" href="/landing">
-            <i class="fas fa-newspaper text-slate-300 mr-2 text-sm" />
-            Landing Page
+          <a href="/admin/blog/category" use:link class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block">
+            <i class="fas fa-folder text-slate-300 mr-2 text-sm" />
+            Category
           </a>
         </li>
-
         <li class="items-center">
-          <a use:link class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block" href="/profile">
-            <i class="fas fa-user-circle text-slate-300 mr-2 text-sm" />
-            Profile Page
+          <a href="/admin/blog/article" use:link class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block">
+            <i class="fas fa-newspaper text-slate-300 mr-2 text-sm" />
+            Article
           </a>
         </li>
       </ul>
@@ -138,37 +137,24 @@
       <h6 class="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">Documentation</h6>
       <!-- Navigation -->
       <ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-        <li class="inline-flex">
-          <a href="http://svelte01.IntLighttech.com/docs/colors" target="_blank" class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold">
-            <i class="fas fa-paint-brush mr-2 text-slate-300 text-base" />
-            Styles
-          </a>
-        </li>
-
-        <li class="inline-flex">
-          <a href="http://svelte01.IntLighttech.com/docs/components" target="_blank" class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold">
-            <i class="fab fa-css3-alt mr-2 text-slate-300 text-base" />
-            CSS Components
-          </a>
-        </li>
 
         <li class="inline-flex">
           <a href="https://svelte.dev/docs" target="_blank" class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold">
-            <i class="fab fa-link mr-2 text-slate-300 text-base" />
+            <i class="fas fa-link mr-2 text-slate-300 text-base" />
             Svelte
           </a>
         </li>
 
         <li class="inline-flex">
           <a href="https://vite-plugin-pwa.netlify.app/" target="_blank" class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold">
-            <i class="fas fa-link mr-2 text-slate-300 text-base" />
-            Vite PWA
+            <i class="fab fa-vine mr-2 text-slate-300 text-base" />
+            Vite
           </a>
         </li>
 
         <li class="inline-flex">
           <a href="https://windicss.org/" target="_blank" class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold">
-            <i class="fab fa-vuejs mr-2 text-slate-300 text-base" />
+            <i class="fas fa-wind mr-2 text-slate-300 text-base" />
             WindiCSS
           </a>
         </li>

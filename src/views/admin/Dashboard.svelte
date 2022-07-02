@@ -1,12 +1,14 @@
 <script>
-  
-  import CardLineChart from "@/components/Cards/CardLineChart.svelte";
-  import CardBarChart from "@/components/Cards/CardBarChart.svelte";
-  import CardPageVisits from "@/components/Cards/CardPageVisits.svelte";
-  import CardSocialTraffic from "@/components/Cards/CardSocialTraffic.svelte";
+  import { location } from 'svelte-spa-router';
+  import CardLineChart from '@/components/Cards/CardLineChart.svelte';
+  import CardBarChart from '@/components/Cards/CardBarChart.svelte';
+  import CardPageVisits from '@/components/Cards/CardPageVisits.svelte';
+  import CardSocialTraffic from '@/components/Cards/CardSocialTraffic.svelte';
+  import HeaderStats from '@/components/Headers/HeaderStats.svelte';
 </script>
 
-<div>
+<HeaderStats />
+<div class="px-4 md:px-8 mx-auto w-full mt-[-6rem]">
   <div class="flex flex-wrap">
     <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
       <CardLineChart />

@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import { link } from "svelte-spa-router";
   import { createPopper } from '@popperjs/core';
   import adminAuthStore from '@/stores/adminAuth';
   import { push } from 'svelte-spa-router';
@@ -17,16 +17,13 @@
     email: 'admin@admin.com',
     uid: '1',
   };
-  clickOutside(popoverDropdownRef);
 
   adminAuthStore.subscribe(async (data) => {
     if (data.user !== null) {
-      // console.log('data user', data);
       user.fullname = data.user.displayName;
       user.avatar = await loadImage(data.user.photoURL);
       user.email = data.user.email;
       user.uid = data.user.uid;
-      // console.log('user', user);
     }
   });
 
@@ -36,8 +33,27 @@
       dropdownPopoverShow = false;
     } else {
       dropdownPopoverShow = true;
-      createPopper(btnDropdownRef, popoverDropdownRef, {
+      const instancePopper = createPopper(btnDropdownRef, popoverDropdownRef, {
         placement: 'top-start',
+        modifiers: [
+          {
+            name: 'offset',
+            options: {
+              offset: [0, 10],
+            },
+          },
+        ],
+        onFirstUpdate: (state) => {
+          clickOutside(btnDropdownRef);
+          btnDropdownRef.addEventListener(
+            'click_outside',
+            function (e) {
+              dropdownPopoverShow = false;
+              instancePopper.update();
+            },
+            false,
+          );
+        },
       });
     }
   };
@@ -48,18 +64,6 @@
     });
     push('/admin/auth/login');
   }
-
-  function loadUserProfile() {}
-
-  onMount(async () => {
-    // let data = adminAuthStore.get();
-    // if (data.user) {
-    //   user.fullname = data.user.displayName;
-    //   user.avatar = await loadImage(data.user.photoURL);
-    //   user.email = data.user.email;
-    //   user.uid = data.user.uid;
-    // }
-  });
 </script>
 
 <div class="dropdown">
@@ -71,17 +75,17 @@
     </div>
   </a>
   <div bind:this={popoverDropdownRef} class="bg-white text-base z-50 float-left py-2 top-100 list-none text-left rounded shadow-lg min-w-48 {dropdownPopoverShow ? 'block' : 'hidden'}">
-    <div class="divide-y divide-gray-200 dark:divide-gray-600">
-      <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+    <div class="divide-y divide-gray-200">
+      <div class="px-4 py-3 text-sm text-gray-900 dark:text-slate-700">
         <div class="text-center font-bold">{user.fullname}</div>
         <div class="text-center font-medium truncate">{user.email}</div>
       </div>
-      <a href="#pablo" on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Profile </a>
+      <a href="/admin/contacts/profile" use:link on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Profile </a>
     </div>
-    <a href="#pablo" on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Settings </a>
-    <div class="divide-y divide-gray-200 dark:divide-gray-600">
-      <a href="#pablo" on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Change Password </a>
-      <button on:click={logoutAdmin} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Logout </button>
+    <a  href="/admin/contacts/settings" use:link on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Settings </a>
+    <div class="divide-y divide-gray-200">
+      <a  href="/admin/contacts/change-password" use:link on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Change Password </a>
+      <button on:click={logoutAdmin} class="text-left text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Logout </button>
     </div>
   </div>
 </div>

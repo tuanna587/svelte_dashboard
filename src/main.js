@@ -1,7 +1,7 @@
 import 'virtual:windi.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
-import './app.css';
+import './app.scss';
 import { registerSW } from 'virtual:pwa-register'
 import '@/libs/sessionTransfer';
 

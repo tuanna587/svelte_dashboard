@@ -25,13 +25,13 @@
 
 <!-- Navbar -->
 <nav class="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
-  <div class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-5 px-3">
+  <div class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-8 px-3">
     <!-- Toggler -->
-    <button class="md:flex hidden cursor-pointer text-black dark:text-red-600 opacity-50 dark:opacity-80 px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent" type="button" on:click={toggleSidebar}>
-      <i class="fas fa-bars" />
+    <button class="md:flex hidden cursor-pointer text-black dark:text-red-900 opacity-50 dark:opacity-80 px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent" type="button" on:click={toggleSidebar}>
+      <i class="fa-solid" class:fa-toggle-off={hide_sidebar_value} class:fa-toggle-on={!hide_sidebar_value}></i>
     </button>
     <!-- Brand -->
-    <a class="text-white dark:text-red-600 text-sm uppercase hidden lg:inline-block font-semibold" href="/admin/" use:link> Dashboard </a>
+    <a class="text-white dark:text-red-900 text-sm uppercase hidden lg:inline-block font-semibold" href="/admin/" use:link> Dashboard </a>
     <div class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
       <!-- Search -->
       <button class="p-2 bg-gray-700 bg-opacity-50 focus:bg-slate-500 focus:bg-opacity-50 rounded-full text-sky-400 h-8 w-8 shadow-lg font-normal flex items-center justify-center align-center outline-none focus:outline-none mr-2" type="button" on:click={toggleSearch}>
