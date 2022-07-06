@@ -1,5 +1,5 @@
 <script>
-  import { link } from "svelte-spa-router";
+  import { link } from 'svelte-spa-router';
   import { createPopper } from '@popperjs/core';
   import adminAuthStore from '@/stores/adminAuth';
   import { push } from 'svelte-spa-router';
@@ -7,7 +7,6 @@
   import { clickOutside } from '@/libs/clickOutside';
 
   let dropdownPopoverShow = false;
-
   let btnDropdownRef;
   let popoverDropdownRef;
   let user = {
@@ -24,6 +23,7 @@
       user.avatar = await loadImage(data.user.photoURL);
       user.email = data.user.email;
       user.uid = data.user.uid;
+      user.provider = data.user.providerData[0].providerId;
     }
   });
 
@@ -57,7 +57,7 @@
       });
     }
   };
-  function logoutAdmin() {
+  async function logoutAdmin() {
     adminAuthStore.set({
       isLoggedIn: false,
       user: null,
@@ -80,11 +80,11 @@
         <div class="text-center font-bold">{user.fullname}</div>
         <div class="text-center font-medium truncate">{user.email}</div>
       </div>
-      <a href="/admin/contacts/profile" use:link on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Profile </a>
+      <a href="/admin/contacts/profile" use:link class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Profile </a>
     </div>
-    <a  href="/admin/contacts/settings" use:link on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Settings </a>
+    <a href="/admin/contacts/settings" use:link class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Settings </a>
     <div class="divide-y divide-gray-200">
-      <a  href="/admin/contacts/change-password" use:link on:click={(e) => e.preventDefault()} class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Change Password </a>
+      <a href="/admin/contacts/change-password" use:link class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Change Password </a>
       <button on:click={logoutAdmin} class="text-left text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"> Logout </button>
     </div>
   </div>

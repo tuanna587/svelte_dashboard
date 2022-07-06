@@ -28,7 +28,7 @@
   <div class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-8 px-3">
     <!-- Toggler -->
     <button class="md:flex hidden cursor-pointer text-black dark:text-red-900 opacity-50 dark:opacity-80 px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent" type="button" on:click={toggleSidebar}>
-      <i class="fa-solid" class:fa-toggle-off={hide_sidebar_value} class:fa-toggle-on={!hide_sidebar_value}></i>
+      <i class="fa-solid" class:fa-toggle-off={!hide_sidebar_value} class:fa-toggle-on={hide_sidebar_value}></i>
     </button>
     <!-- Brand -->
     <a class="text-white dark:text-red-900 text-sm uppercase hidden lg:inline-block font-semibold" href="/admin/" use:link> Dashboard </a>

@@ -26,6 +26,7 @@
     "workbox-window": "^6.5.3"
   },
   "dependencies": {
+    "@loopback/authentication-passport": "^5.0.1",
     "firebase": "^9.8.4",
     "svelte": "^3.44.0",
     "svelte-select": "^4.4.7",

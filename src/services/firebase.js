@@ -3,7 +3,7 @@ import { tick } from 'svelte';
 import { push } from 'svelte-spa-router';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
-import { getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
+import { getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider, setPersistence, browserSessionPersistence } from 'firebase/auth';
 import adminAuthStore from '@/stores/adminAuth';
 
 //save to store
@@ -57,6 +57,24 @@ function loginWithGoogle(auth) {
       const credential = GoogleAuthProvider.credentialFromError(error);
     });
 }
+async function logOut() {
+  const { firebase_app } = initFirebaseApp();
+  const auth = getAuth(firebase_app);
+  if (/(google|facebook)/.test(user.provider)) {
+    const prom = new Promise((resolve, reject) => {
+      return signOut(auth)
+        .then(() => {
+          // Sign-out successful.
+          return resolve(true);
+        })
+        .catch((error) => {
+          // An error happened.
+          return reject('signOut firebase fail');
+        });
+    });
+    let resSignout = await prom;
+  }
+}
 function loginWithFacebook(auth) {
   const provider = new FacebookAuthProvider();
   signInWithPopup(auth, provider)
@@ -81,7 +99,7 @@ function loginWithFacebook(auth) {
       console.log('loginWithFacebook error', error.message);
     });
 }
-function initFirebase(provider) {
+function initFirebaseApp() {
   const firebaseConfig = {
     apiKey: 'AIzaSyBdi7KD4sE8v7qGTBf6zKCyfGa7LqsSqQk',
     authDomain: 'sveltedemo-30376.firebaseapp.com',
@@ -95,31 +113,52 @@ function initFirebase(provider) {
   // Initialize Firebase
   const firebase_app = initializeApp(firebaseConfig);
   const firebase_analytics = getAnalytics(firebase_app);
-  const auth = getAuth(firebase_app);
+  console.log('initFirebase ->> initFirebaseApp');
+  return { firebase_app, firebase_analytics };
+}
+function initFirebase(provider) {
+  const { firebase_app } = initFirebaseApp();
+  const auth = getAuth();
   auth.languageCode = 'vi';
 
-  checkFirebaseAuthState(auth, provider, (user) => {
-    // console.log('checkFirebaseAuthState', user);
-    if (!user) {
-      if (provider == 'google') {
-        loginWithGoogle(auth);
-      } else {
-        loginWithFacebook(auth);
-      }
-    } else {
-      let regex = new RegExp(provider, 'i');
-      //   console.log('regex.test(user.providerData[0].providerId)', regex, user.providerData[0].providerId, regex.test(user.providerData[0].providerId));
-      if (regex.test(user.providerData[0].providerId)) {
-        saveStore(user);
-      } else {
-        if (provider == 'google') {
-          loginWithGoogle(auth);
+  setPersistence(auth, browserSessionPersistence)
+    .then(() => {
+      // Existing and future Auth states are now persisted in the current
+      // session only. Closing the window would clear any existing state even
+      // if a user forgets to sign out.
+      // ...
+      // New sign-in will be persisted with session persistence.
+      // return signInWithEmailAndPassword(auth, email, password);
+      checkFirebaseAuthState(auth, provider, (user) => {
+        console.log('initFirebase ->> checkFirebaseAuthState user', user);
+        console.trace();
+
+        // console.log('checkFirebaseAuthState', user);
+        if (!user) {
+          if (provider == 'google') {
+            loginWithGoogle(auth);
+          } else {
+            loginWithFacebook(auth);
+          }
         } else {
-          loginWithFacebook(auth);
+          let regex = new RegExp(provider, 'i');
+          if (regex.test(user.providerData[0].providerId)) {
+            saveStore(user);
+          } else {
+            if (provider == 'google') {
+              loginWithGoogle(auth);
+            } else {
+              loginWithFacebook(auth);
+            }
+          }
         }
-      }
-    }
-  });
+      });
+    })
+    .catch((error) => {
+      // Handle Errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+    });
 }
 
-export { initFirebase, loginWithGoogle, checkFirebaseAuthState };
+export { initFirebase, initFirebaseApp, loginWithGoogle, checkFirebaseAuthState };
