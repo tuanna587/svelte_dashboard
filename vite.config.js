@@ -2,12 +2,16 @@ import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { VitePWA } from 'vite-plugin-pwa';
 import WindiCSS from 'vite-plugin-windicss';
+// import { copy } from 'vite-plugin-copy';
 import * as path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  manualChunks: (id) => {
+  manualChunks: (id) => {  
     if (id.includes('node_modules')) return id.toString().split('node_modules/')[1].split('/')[0].toString();
+  },
+  extract: {
+    include: ['src/**/*.{html,vue,jsx,tsx,svelte}'],
   },
   plugins: [
     VitePWA({
@@ -97,6 +101,7 @@ export default defineConfig({
     } */),
     WindiCSS(),
     splitVendorChunkPlugin(),
+    // copy([{ src: 'node_modules/tinymce/*', dest: 'public/tinymce' }]),
   ],
   resolve: {
     alias: {

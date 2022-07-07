@@ -21,7 +21,7 @@
       </h2>
       <p class="mb-6 text-base text-indigo-100 md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo. Sed ut perspiciatis unde omnis.</p>
       <form class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16">
-        <input placeholder="Email" required="" type="text" class="flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-whie focus:border-teal-700 focus:outline-none focus:shadow-outline" />
+        <input placeholder="Email" required type="text" class="flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-whie focus:border-teal-700 focus:outline-none focus:shadow-outline" />
         <a href="/" class="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-indigo-400 hover:bg-indigo-500 focus:shadow-outline focus:outline-none"> Subscribe </a>
       </form>
       <p class="max-w-md mb-10 text-xs tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
